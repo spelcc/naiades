@@ -48,3 +48,58 @@
 .naiades-contact-mail-row .home-hero-btn-wrapper {
   margin-top: 0;
 }
+
+
+/* Stable hamburger / close icon */
+.menu-button {
+  width: 45px;
+  height: 45px;
+  color: #210704;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px 2px;
+  position: relative;
+}
+
+.menu-button .menu-lottie {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.menu-button::before,
+.menu-button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 24px;
+  height: 2px;
+  background: currentColor;
+  transform-origin: center;
+  transition: transform 180ms ease, margin 180ms ease;
+}
+
+.menu-button::before {
+  transform: translate(-50%, -50%);
+  margin-top: -7px;
+}
+
+.menu-button::after {
+  transform: translate(-50%, -50%);
+  margin-top: 7px;
+}
+
+.menu-button.w--open {
+  background-size: 0 2px;
+}
+
+.menu-button.w--open::before {
+  margin-top: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu-button.w--open::after {
+  margin-top: 0;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
