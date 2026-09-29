@@ -10,7 +10,7 @@ const githubPages = target === "github-pages";
 const publicOnly = githubPages || process.env.PUBLIC_ONLY === "true";
 
 export default defineConfig({
-  ...(githubPages ? { site: "https://spelcc.github.io", base: "/naiades" } : {}),
+  ...(githubPages ? { site: "https://www.naiadestattoo.com", base: "/" } : {}),
   output: githubPages ? "static" : "server",
   outDir: githubPages ? "./dist-pages" : publicOnly ? "./dist-public" : "./dist",
   ...(githubPages ? {} : { adapter: node({ mode: "standalone" }) }),

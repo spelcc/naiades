@@ -25,18 +25,14 @@ const escAttr = (value: unknown) => escText(value).replaceAll('"', "&quot;");
 
 export function withBasePath(value: string) {
   if (!value.startsWith("/") || value.startsWith("//")) return value;
-  const configuredBase = process.env.DEPLOY_TARGET === "github-pages"
-    ? "/naiades"
-    : (import.meta.env.BASE_URL || "/");
+  const configuredBase = import.meta.env.BASE_URL || "/";
   const base = configuredBase.replace(/\/$/, "");
   if (!base || base === "/" || value === base || value.startsWith(base + "/")) return value;
   return base + value;
 }
 
 export function prefixLocalHtml(html: string) {
-  const configuredBase = process.env.DEPLOY_TARGET === "github-pages"
-    ? "/naiades"
-    : (import.meta.env.BASE_URL || "/");
+  const configuredBase = import.meta.env.BASE_URL || "/";
   const base = configuredBase.replace(/\/$/, "");
   if (!base || base === "/") return html;
 
