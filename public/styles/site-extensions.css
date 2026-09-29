@@ -265,24 +265,24 @@ a.naiades-article-card {
 /* Keep open-menu contact links inside short mobile viewports. */
 @media (max-width: 767px) and (max-height: 760px) {
   .nav-menu {
-    height: 100svh;
-    max-height: 100svh;
+    height: 100dvh;
+    max-height: 100dvh;
     overflow-y: auto;
   }
 
   .nav-elements-wrapper {
     height: auto;
-    min-height: 100svh;
+    min-height: 100dvh;
     align-items: stretch;
   }
 
   .nav-links-container {
-    min-height: 100svh;
+    min-height: 100dvh;
     height: auto;
     justify-content: flex-start;
     gap: 1.25rem;
     padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding-bottom: calc(6rem + env(safe-area-inset-bottom, 0px));
   }
 
   .nav-logo-wrapper,

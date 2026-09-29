@@ -261,5 +261,5 @@ test("opened menu uses Instagram instead of phone", async ({ page }) => {
   await page.waitForTimeout(850);
   const instagramBox = await instagram.boundingBox();
   expect(instagramBox).not.toBeNull();
-  expect(instagramBox.y + instagramBox.height).toBeLessThanOrEqual(568);
+  expect(instagramBox.y + instagramBox.height).toBeLessThanOrEqual(472);
 });
