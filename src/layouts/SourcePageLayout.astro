@@ -1,0 +1,79 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  manifest: {
+    html: { lang: string; wfDomain: string; wfPage: string; wfSite: string };
+    headStyles: string[];
+  };
+}
+const { title, description = "", manifest } = Astro.props;
+import { withBasePath } from "../lib/source-pages";
+const contactEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || withBasePath("/api/contact");
+---
+<!doctype html>
+<html
+  lang={manifest.html.lang || "fr"}
+  data-wf-domain={manifest.html.wfDomain}
+  data-wf-page={manifest.html.wfPage}
+  data-wf-site={manifest.html.wfSite}
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    {description && <meta name="description" content={description} />}
+    <meta name="generator" content="Astro + Keystatic" />
+    <link rel="stylesheet" href={withBasePath("/fonts/google-fonts.css")} />
+    <link rel="stylesheet" href={withBasePath("/styles/original-webflow.css")} />
+    <link rel="stylesheet" href={withBasePath("/styles/site-extensions.css")} />
+    <link rel="shortcut icon" href={withBasePath("/assets/vendor/cdn-prod-website-files-com/8b307f61a8-6746efca8d698f8d74d752cf_Illustration_sans_titre-2.jpg")} />
+    {manifest.headStyles.map((css) => <style is:inline set:html={css} />)}
+    <script is:inline>
+      (function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart" in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")})(window,document);
+    </script>
+  </head>
+  <body data-contact-endpoint={contactEndpoint}>
+    <slot />
+    <script is:inline>
+      const prepareLocalForms = () => {
+        document.querySelectorAll(".w-form form").forEach((form) => {
+          const captcha = form.querySelector(".w-form-formrecaptcha");
+          if (captcha) {
+            captcha.removeAttribute("data-sitekey");
+            captcha.classList.remove("g-recaptcha", "g-recaptcha-error", "g-recaptcha-disabled");
+          }
+          const submit = form.querySelector('input[type="submit"], button[type="submit"]');
+          if (submit instanceof HTMLInputElement || submit instanceof HTMLButtonElement) {
+            submit.disabled = false;
+            submit.classList.remove("w-form-loading");
+          }
+        });
+      };
+      prepareLocalForms();
+      document.addEventListener("DOMContentLoaded", prepareLocalForms, { once: true });
+      window.setTimeout(prepareLocalForms, 250);
+      window.setTimeout(prepareLocalForms, 1000);
+
+      document.addEventListener("submit", async (event) => {
+        const form = event.target;
+        if (!(form instanceof HTMLFormElement) || !form.closest(".w-form")) return;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        const wrapper = form.closest(".w-form");
+        const success = wrapper?.querySelector(".w-form-done");
+        const failure = wrapper?.querySelector(".w-form-fail");
+        try {
+          const endpoint = document.body.dataset.contactEndpoint || "/api/contact";
+          const response = await fetch(endpoint, { method: "POST", body: new FormData(form) });
+          if (!response.ok) throw new Error("submit failed");
+          form.style.display = "none";
+          if (success instanceof HTMLElement) success.style.display = "block";
+          if (failure instanceof HTMLElement) failure.style.display = "none";
+        } catch {
+          if (failure instanceof HTMLElement) failure.style.display = "block";
+        }
+      }, true);
+    </script>
+  </body>
+</html>

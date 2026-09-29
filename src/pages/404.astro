@@ -1,0 +1,15 @@
+---
+import { renderArticleSkin } from "../lib/article-skin";
+import SourcePageLayout from "../layouts/SourcePageLayout.astro";
+import { prefixLocalHtml, withBasePath } from "../lib/source-pages";
+
+const skin = await renderArticleSkin({
+  title: "Page introuvable",
+  contentHtml: '<p>Cette page n’existe pas.</p><p><a href="' + withBasePath("/") + '">Retour à l’accueil</a></p>',
+});
+const pageHtml = prefixLocalHtml(skin.html);
+Astro.response.status = 404;
+---
+<SourcePageLayout title="Page introuvable · Naïades Tattoo" description="" manifest={skin.manifest}>
+  <Fragment set:html={pageHtml} />
+</SourcePageLayout>

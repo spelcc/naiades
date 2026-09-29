@@ -1,0 +1,16 @@
+---
+import SourcePage from "../components/SourcePage.astro";
+import { hasSourcePage } from "../lib/source-pages";
+import { pageManifests } from "../generated/page-manifests";
+
+export function getStaticPaths() {
+  return pageManifests
+    .filter((page) => page.route !== "/" && !page.route.startsWith("/articles/") && !page.route.startsWith("/blog/"))
+    .map((page) => ({ params: { path: page.route.replace(/^\//, "") } }));
+}
+
+const raw = Astro.params.path || "";
+const id = raw.replaceAll("/", "__");
+if (!id || !(await hasSourcePage(id))) return Astro.redirect("/404", 302);
+---
+<SourcePage id={id} />

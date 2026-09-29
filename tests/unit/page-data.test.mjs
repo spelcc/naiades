@@ -1,0 +1,57 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import fs from "node:fs/promises";
+import path from "node:path";
+
+const root = process.cwd();
+const manifestsDir = path.join(root, "src/content/page-manifests");
+const pagesDir = path.join(root, "src/content/pages");
+const templatesDir = path.join(root, "src/templates/pages");
+
+const files = (await fs.readdir(manifestsDir)).filter((file) => file.endsWith(".json")).sort();
+
+test("all 14 public source pages are migrated", () => {
+  assert.equal(files.length, 14);
+});
+
+for (const file of files) {
+  const id = file.replace(/\.json$/, "");
+  test(`${id}: page data covers every template placeholder`, async () => {
+    const [manifestRaw, dataRaw, template] = await Promise.all([
+      fs.readFile(path.join(manifestsDir, file), "utf8"),
+      fs.readFile(path.join(pagesDir, file), "utf8"),
+      fs.readFile(path.join(templatesDir, `${id}.html`), "utf8"),
+    ]);
+    const manifest = JSON.parse(manifestRaw);
+    const data = JSON.parse(dataRaw);
+
+    for (const [group, prefix] of [
+      ["copy", "KS_COPY"],
+      ["links", "KS_LINK"],
+      ["form", "KS_FORM"],
+    ]) {
+      for (const key of Object.keys(data[group] || {})) {
+        assert.match(template, new RegExp(`__${prefix}_${key}__`));
+      }
+      assert.deepEqual(Object.keys(data[group] || {}).sort(), Object.keys(manifest.fields[group] || {}).sort());
+    }
+
+    for (const key of Object.keys(data.media || {})) {
+      assert.match(template, new RegExp(`__KS_MEDIA_${key}_SRC__`));
+      assert.match(template, new RegExp(`__KS_MEDIA_${key}_ALT__`));
+    }
+    assert.deepEqual(Object.keys(data.media || {}).sort(), Object.keys(manifest.fields.media || {}).sort());
+  });
+}
+
+test("legacy articles and blogs are migrated into the Articles collection", async () => {
+  const articleDir = path.join(root, "src/content/articles");
+  const entries = (await fs.readdir(articleDir)).filter((file) => file.endsWith(".mdoc"));
+  assert.equal(entries.length, 10);
+
+  const config = await fs.readFile(path.join(root, "keystatic.config.ts"), "utf8");
+  assert.match(config, /label: "Articles"/);
+  assert.match(config, /path: "src\/content\/articles\/\*"/);
+  assert.match(config, /!manifest\.id\.startsWith\("articles__"\)/);
+  assert.match(config, /!manifest\.id\.startsWith\("blog__"\)/);
+});

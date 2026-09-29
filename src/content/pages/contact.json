@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "title": "Naïades Tattoo - Tatoueuse à Lyon",
+    "description": "N'hésite pas à me contacter pour un tatouage unique et coloré :)"
+  },
+  "copy": {
+    "t001": "Naïades Tattoo",
+    "t002": "Naïades Tattoo",
+    "t003": "Accueil",
+    "t004": "À propos",
+    "t005": "FAQ",
+    "t006": "Me contacter",
+    "t007": "naiadestattoo@gmail.com",
+    "t008": "09 81 86 82 20",
+    "t009": "N'hésite pas à me contacter",
+    "t010": "Je me ferai un plaisir de te répondre que ce soit pour une demande de tattoo ou simplement des questions 🙂",
+    "t011": "Je propose aussi des",
+    "t012": ": l'idée est d'échanger et se rencontrer, même si ton projet est flou, même si tu n’es pas encore sûr·e ☺️ (il n'y a aucun engagement)",
+    "t013": "appels découverte en visio",
+    "t014": "Réserver un appel",
+    "t015": "Merci, je reviens vers toi au plus vite !",
+    "t016": "Oups ! Quelque chose s'est mal passé, réessaie ou contacte-moi via",
+    "t017": ".",
+    "t018": "Instagram",
+    "t019": "Naïades Tattoo",
+    "t020": "22 rue du Cdt Faurax, 69006 Lyon",
+    "t021": "@naiadestattoo",
+    "t022": "naiadestattoo@gmail.com",
+    "t023": "0981868220",
+    "t024": "Accueil",
+    "t025": "À propos",
+    "t026": "Portfolio",
+    "t027": "Portfolio Single",
+    "t028": "Me contacter",
+    "t029": "FAQ",
+    "t030": "License",
+    "t031": "Changelog",
+    "t032": "404",
+    "t033": "Copyright © 2024 Naïades Tattoo. All rights reserved."
+  },
+  "media": {
+    "img001": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/e624f37e73-66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c.jpeg",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/7bab32e455-66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/e624f37e73-66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c.jpeg 666w",
+      "sizes": "100vw"
+    },
+    "img002": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/05c3ce47c5-6729f7277cc11a0b398e9b9b_IMG_6913.jpeg",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/54cc1ef40f-6729f7277cc11a0b398e9b9b_IMG_6913-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/295f4274e8-6729f7277cc11a0b398e9b9b_IMG_6913-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/7f41a66250-6729f7277cc11a0b398e9b9b_IMG_6913-p-1080.jpeg 1080w, /assets/vendor/cdn-prod-website-files-com/3d4896725e-6729f7277cc11a0b398e9b9b_IMG_6913-p-1600.jpeg 1600w, /assets/vendor/cdn-prod-website-files-com/10129a1b70-6729f7277cc11a0b398e9b9b_IMG_6913-p-2000.jpeg 2000w, /assets/vendor/cdn-prod-website-files-com/05c3ce47c5-6729f7277cc11a0b398e9b9b_IMG_6913.jpeg 2268w",
+      "sizes": "100vw"
+    },
+    "img003": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/32211c3b63-66dee17f962b82764bf1975b_Mask-group-2.webp",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/41a73248be-66dee17f962b82764bf1975b_Mask-20group-2-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/32211c3b63-66dee17f962b82764bf1975b_Mask-group-2.webp 753w",
+      "sizes": "100vw"
+    },
+    "img004": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/e624f37e73-66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c.jpeg",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/7bab32e455-66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/e624f37e73-66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c.jpeg 666w",
+      "sizes": "100vw"
+    },
+    "img005": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/21dbb00ff8-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a.jpeg",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/0ff5a6d9a6-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/0e20612ef1-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/7b1f5b5f8a-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a-p-1080.jpeg 1080w, /assets/vendor/cdn-prod-website-files-com/21dbb00ff8-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a.jpeg 1330w",
+      "sizes": "100vw"
+    },
+    "img006": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/d085716b08-6729f49927c3fb14b5201c56_IMG_6280.jpeg",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/2198c41856-6729f49927c3fb14b5201c56_IMG_6280-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/183f80633d-6729f49927c3fb14b5201c56_IMG_6280-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/d99f7ec331-6729f49927c3fb14b5201c56_IMG_6280-p-1080.jpeg 1080w, /assets/vendor/cdn-prod-website-files-com/570b99e828-6729f49927c3fb14b5201c56_IMG_6280-p-1600.jpeg 1600w, /assets/vendor/cdn-prod-website-files-com/e3f4ca80a7-6729f49927c3fb14b5201c56_IMG_6280-p-2000.jpeg 2000w, /assets/vendor/cdn-prod-website-files-com/d085716b08-6729f49927c3fb14b5201c56_IMG_6280.jpeg 2268w",
+      "sizes": "100vw"
+    },
+    "img007": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/d085716b08-6729f49927c3fb14b5201c56_IMG_6280.jpeg",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/2198c41856-6729f49927c3fb14b5201c56_IMG_6280-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/183f80633d-6729f49927c3fb14b5201c56_IMG_6280-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/d99f7ec331-6729f49927c3fb14b5201c56_IMG_6280-p-1080.jpeg 1080w, /assets/vendor/cdn-prod-website-files-com/570b99e828-6729f49927c3fb14b5201c56_IMG_6280-p-1600.jpeg 1600w, /assets/vendor/cdn-prod-website-files-com/e3f4ca80a7-6729f49927c3fb14b5201c56_IMG_6280-p-2000.jpeg 2000w, /assets/vendor/cdn-prod-website-files-com/d085716b08-6729f49927c3fb14b5201c56_IMG_6280.jpeg 2268w",
+      "sizes": "100vw"
+    },
+    "img008": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/21dbb00ff8-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a.jpeg",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/0ff5a6d9a6-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/0e20612ef1-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/7b1f5b5f8a-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a-p-1080.jpeg 1080w, /assets/vendor/cdn-prod-website-files-com/21dbb00ff8-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a.jpeg 1330w",
+      "sizes": "100vw"
+    },
+    "img009": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/570306402a-66e689e358c7fdd631fb820f_B331B535-0241-4274-BE2A-3B33052BCF05_1_105_c.jpeg",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/0cd2c0af49-66e689e358c7fdd631fb820f_B331B535-0241-4274-BE2A-3B33052BCF05_1_105_c-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/570306402a-66e689e358c7fdd631fb820f_B331B535-0241-4274-BE2A-3B33052BCF05_1_105_c.jpeg 665w",
+      "sizes": "(max-width: 665px) 100vw, 665px"
+    }
+  },
+  "links": {
+    "link001": "/",
+    "link002": "/",
+    "link003": "/",
+    "link004": "/apropos",
+    "link005": "/faq",
+    "link006": "/contact",
+    "link007": "mailto:naiadestattoo@gmail.com",
+    "link008": "tel:+33981868220",
+    "link009": "https://www.instagram.com/naiadestattoo/",
+    "link010": "https://calendly.com/naiadestattoo/45min",
+    "link011": "https://www.instagram.com/naiadestattoo/",
+    "link012": "https://maps.app.goo.gl/qSRW5Kk9gbhzwJPj7",
+    "link013": "https://www.instagram.com/naiadestattoo",
+    "link014": "mailto:naiadestattoo@gmail.com?subject=Demande%20de%20renseignement",
+    "link015": "tel:1800.456.568",
+    "link016": "/",
+    "link017": "/apropos",
+    "link018": "/portfolio",
+    "link019": "https://rose-marble-portfolio.webflow.io/portfolios/amelia-rodriguez",
+    "link020": "/contact",
+    "link021": "/faq",
+    "link022": "#",
+    "link023": "#",
+    "link024": "https://rose-marble-portfolio.webflow.io/404"
+  },
+  "form": {
+    "placeholder001": "Ton nom",
+    "placeholder002": "Ton adresse email",
+    "placeholder003": "Message"
+  }
+}

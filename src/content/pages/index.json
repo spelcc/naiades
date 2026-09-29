@@ -1,0 +1,429 @@
+{
+  "meta": {
+    "title": "Naïades Tattoo - Tatoueuse à Lyon",
+    "description": "Je créée des tatouages illustratifs uniques, colorés et pleins de peps :)"
+  },
+  "copy": {
+    "t001": "Naïades Tattoo",
+    "t002": "Naïades Tattoo",
+    "t003": "Accueil",
+    "t004": "À propos",
+    "t005": "FAQ",
+    "t006": "Me contacter",
+    "t007": "naiadestattoo@gmail.com",
+    "t008": "09 81 86 82 20",
+    "t009": "Découvrez mes tatouages colorés",
+    "t010": "Moi c'est Estelle / Naïades ! Je suis tatoueuse à Lyon et j'encre vos peaux d'oeuvres singulières et colorées. J'ai un style unique crayonné, aux aplats de gouaches et avec ma propre palette de couleurs pastels. La nature, avec ses merveilleux animaux, est une source d'inspiration inépuisable pour moi !",
+    "t011": "Prendre un RDV",
+    "t012": "Quelques avis de mes client·e·s d'amour 🥰",
+    "t013": "\"Énorme coup de cœur pour un flash qui date de quelques années, mais ça valait le coup d’attendre, j’ai passé une excellente journée avec Estelle, c’est une tatoueuse très professionnelle et très talentueuse et d’une gentillesse  incomparable, je la recommande à tous les Lyonnais, si elle fait un guest dans votre ville, n’hésitez pas une seule seconde ! Encore 1000 fois merci Estelle, tu es géniale !\"",
+    "t014": "Andréa",
+    "t015": "\"Tatoueuse au top! [...]. Suite à un événement dans ma vie, j'étais sûre qu'elle serait la bonne personne pour marquer cette étape dans ma peau! [...] Estelle est ultra bienveillante, accessible et à l'écoute de ses client.e.s. Ce n'est pas qu'une vitrine, elle se met vraiment en 4 pour que son travail soit au top pour nous et qu'on se sente bien sous ses aiguilles! Franchement elle mérite de se faire connaître. Alors allez la voir, vous serez forcément content.e.s!\"",
+    "t016": "Stéphanie",
+    "t017": "\"Super séance pour la réalisation d'un flash ! Tatoueuse disponible, à l'écoute, douce et super sympa (safe place). Tatouage incroyable !! Merci encore Estelle !\"",
+    "t018": "Marina",
+    "t019": "\"Un moment rempli de bienveillance, un tatouage coloré et rempli de peps, Estelle nous met tout de suite en confiance et tout au long de la session, merci 🫶\"",
+    "t020": "Justine",
+    "t021": "Voir tous les commentaires →",
+    "t022": "Des questions ?",
+    "t023": "Je suis là pour répondre à toutes tes questions. N'hésite pas à me contacter ou lire la FAQ ☺️",
+    "t024": "FAQ",
+    "t025": "Me contacter",
+    "t026": "À propos de moi",
+    "t027": "Depuis l’enfance, le dessin est une passion qui ne m’a jamais quittée, et depuis deux ans, j’ai la chance de la partager avec vous par le tatouage. Ce qui me tient à cœur, c’est de tisser avec vous une relation unique et encrer votre peau de tatouages pleins de peps et de sens. À chaque projet, je suis à l’écoute et m’adapte avec soin pour que vos idées prennent vie dans un cadre respectueux et chaleureux.",
+    "t028": "Naïades",
+    "t029": "Me contacter",
+    "t030": "Les étapes d'un projet de tatouage",
+    "t031": "Rencontre",
+    "t032": "Rdv Discussion",
+    "t033": "Les rdvs discussions permettent de discuter de ton projet, d’apprendre à se connaître, c’est un moment privilégié entre toi et moi qui me permettra de mieux comprendre ton projet et tes besoins.",
+    "t034": "Création",
+    "t035": "Le dessin",
+    "t036": "L'étape de création de ton tatouage se fait avec toi. Nous échangerons sur le dessin, je prendrai tes retours en compte pour que le tatouage répondre parfaitement à tes attentes.",
+    "t037": "Le tatouage",
+    "t038": "Te tatouer",
+    "t039": "Je t'accueille dans un environnement conforme et chaleureux. Je m'efforcerai de m'adapter à tes besoins spécifiques pendant la séance. Rien n'est tabou, tu as le droit de me poser autant de questions que tu souhaites :)",
+    "t040": "Quelques tatouages réalisés",
+    "t041": "...my clients say",
+    "t042": "“Beautiful memories to cherish forever”",
+    "t043": "\"I had the pleasure of hiring Rose for a personal portrait session. Their warm and friendly approach instantly put me at ease, resulting in natural and stunning photographs that truly reflected my personality.",
+    "t044": "Susan Schuette",
+    "t045": "Columbia, MO",
+    "t046": "“Beautiful memories to cherish forever”",
+    "t047": "\"I had the pleasure of hiring [Your Name] for a personal portrait session. Their warm and friendly approach instantly put me at ease, resulting in natural and stunning photographs that truly reflected my personality.",
+    "t048": "Susan Schuette",
+    "t049": "Columbia, MO",
+    "t050": "“Beautiful memories to cherish forever”",
+    "t051": "\"I had the pleasure of hiring Rose for a personal portrait session. Their warm and friendly approach instantly put me at ease, resulting in natural and stunning photographs that truly reflected my personality.",
+    "t052": "Susan Schuette",
+    "t053": "Columbia, MO",
+    "t054": "Picture-perfect services for every occasion",
+    "t055": "Reach out to me",
+    "t056": "4840 Flint Street Adairsville, GA 30103",
+    "t057": "Contact",
+    "t058": "Capturing moments, creating memories",
+    "t059": "Join my community and stay updated with the latest trends and tips!",
+    "t060": "Follow on",
+    "t061": "Naïades Tattoo",
+    "t062": "22 rue du Cdt Faurax, 69006 Lyon",
+    "t063": "@naiadestattoo",
+    "t064": "naiadestattoo@gmail.com",
+    "t065": "0981868220",
+    "t066": "Accueil",
+    "t067": "À propos",
+    "t068": "Portfolio",
+    "t069": "Portfolio Single",
+    "t070": "Me contacter",
+    "t071": "FAQ",
+    "t072": "License",
+    "t073": "Changelog",
+    "t074": "404",
+    "t075": "Copyright © 2024 Naïades Tattoo. All rights reserved."
+  },
+  "media": {
+    "img001": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/e624f37e73-66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c.jpeg",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/7bab32e455-66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/e624f37e73-66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c.jpeg 666w",
+      "sizes": "100vw"
+    },
+    "img002": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/05c3ce47c5-6729f7277cc11a0b398e9b9b_IMG_6913.jpeg",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/54cc1ef40f-6729f7277cc11a0b398e9b9b_IMG_6913-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/295f4274e8-6729f7277cc11a0b398e9b9b_IMG_6913-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/7f41a66250-6729f7277cc11a0b398e9b9b_IMG_6913-p-1080.jpeg 1080w, /assets/vendor/cdn-prod-website-files-com/3d4896725e-6729f7277cc11a0b398e9b9b_IMG_6913-p-1600.jpeg 1600w, /assets/vendor/cdn-prod-website-files-com/10129a1b70-6729f7277cc11a0b398e9b9b_IMG_6913-p-2000.jpeg 2000w, /assets/vendor/cdn-prod-website-files-com/05c3ce47c5-6729f7277cc11a0b398e9b9b_IMG_6913.jpeg 2268w",
+      "sizes": "100vw"
+    },
+    "img003": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/32211c3b63-66dee17f962b82764bf1975b_Mask-group-2.webp",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/41a73248be-66dee17f962b82764bf1975b_Mask-20group-2-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/32211c3b63-66dee17f962b82764bf1975b_Mask-group-2.webp 753w",
+      "sizes": "100vw"
+    },
+    "img004": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/e624f37e73-66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c.jpeg",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/7bab32e455-66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/e624f37e73-66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c.jpeg 666w",
+      "sizes": "100vw"
+    },
+    "img005": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/21dbb00ff8-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a.jpeg",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/0ff5a6d9a6-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/0e20612ef1-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/7b1f5b5f8a-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a-p-1080.jpeg 1080w, /assets/vendor/cdn-prod-website-files-com/21dbb00ff8-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a.jpeg 1330w",
+      "sizes": "100vw"
+    },
+    "img006": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/d085716b08-6729f49927c3fb14b5201c56_IMG_6280.jpeg",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/2198c41856-6729f49927c3fb14b5201c56_IMG_6280-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/183f80633d-6729f49927c3fb14b5201c56_IMG_6280-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/d99f7ec331-6729f49927c3fb14b5201c56_IMG_6280-p-1080.jpeg 1080w, /assets/vendor/cdn-prod-website-files-com/570b99e828-6729f49927c3fb14b5201c56_IMG_6280-p-1600.jpeg 1600w, /assets/vendor/cdn-prod-website-files-com/e3f4ca80a7-6729f49927c3fb14b5201c56_IMG_6280-p-2000.jpeg 2000w, /assets/vendor/cdn-prod-website-files-com/d085716b08-6729f49927c3fb14b5201c56_IMG_6280.jpeg 2268w",
+      "sizes": "100vw"
+    },
+    "img007": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/d085716b08-6729f49927c3fb14b5201c56_IMG_6280.jpeg",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/2198c41856-6729f49927c3fb14b5201c56_IMG_6280-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/183f80633d-6729f49927c3fb14b5201c56_IMG_6280-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/d99f7ec331-6729f49927c3fb14b5201c56_IMG_6280-p-1080.jpeg 1080w, /assets/vendor/cdn-prod-website-files-com/570b99e828-6729f49927c3fb14b5201c56_IMG_6280-p-1600.jpeg 1600w, /assets/vendor/cdn-prod-website-files-com/e3f4ca80a7-6729f49927c3fb14b5201c56_IMG_6280-p-2000.jpeg 2000w, /assets/vendor/cdn-prod-website-files-com/d085716b08-6729f49927c3fb14b5201c56_IMG_6280.jpeg 2268w",
+      "sizes": "100vw"
+    },
+    "img008": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/21dbb00ff8-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a.jpeg",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/0ff5a6d9a6-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/0e20612ef1-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/7b1f5b5f8a-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a-p-1080.jpeg 1080w, /assets/vendor/cdn-prod-website-files-com/21dbb00ff8-66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a.jpeg 1330w",
+      "sizes": "100vw"
+    },
+    "img009": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/e909101bdb-674705d77b32170308dd7518_6729ea4f75e398874d080b3f_IMG_6895-Medium.jpeg",
+      "alt": "Tatouage baleine",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/a42e0934f3-674705d77b32170308dd7518_6729ea4f75e398874d080b3f_IMG_6895-Medium-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/e909101bdb-674705d77b32170308dd7518_6729ea4f75e398874d080b3f_IMG_6895-Medium.jpeg 531w",
+      "sizes": "(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
+    },
+    "img010": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/a7d46d8788-685570567ac5278ddcb7aad4_allumette-web.jpeg",
+      "alt": "Tatouage oranges",
+      "srcset": "",
+      "sizes": ""
+    },
+    "img011": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/4dbe336d42-68557056885604aeade2ec2c_coccinelle-web.jpeg",
+      "alt": "Tatouage couleur coccinelle",
+      "srcset": "",
+      "sizes": ""
+    },
+    "img012": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/6845d883ac-6729eb5c5942a68258d71ae7_IMG_3061.jpeg",
+      "alt": "",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/011ca4c673-6729eb5c5942a68258d71ae7_IMG_3061-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/ab35f52b21-6729eb5c5942a68258d71ae7_IMG_3061-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/094ca5d3da-6729eb5c5942a68258d71ae7_IMG_3061-p-1080.jpeg 1080w, /assets/vendor/cdn-prod-website-files-com/551be4dabe-6729eb5c5942a68258d71ae7_IMG_3061-p-1600.jpeg 1600w, /assets/vendor/cdn-prod-website-files-com/4bceb9baf6-6729eb5c5942a68258d71ae7_IMG_3061-p-2000.jpeg 2000w, /assets/vendor/cdn-prod-website-files-com/cb3d5ec261-6729eb5c5942a68258d71ae7_IMG_3061-p-2600.jpeg 2600w, /assets/vendor/cdn-prod-website-files-com/6845d883ac-6729eb5c5942a68258d71ae7_IMG_3061.jpeg 3024w",
+      "sizes": "180px"
+    },
+    "img013": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/c56e643ac0-66e68c06ac6cecdbea38103f_491E72FD-40EC-4FC8-8779-DF0D37921DC3_4_5005_c.jpeg",
+      "alt": "",
+      "srcset": "",
+      "sizes": ""
+    },
+    "img014": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/4d0fc4c974-6746ed9b4db3953c655bf437_6729e7f2a77c22b44da0ff19_IMG_3788---Moyenne.jpeg",
+      "alt": "Se rencontrer",
+      "srcset": "",
+      "sizes": ""
+    },
+    "img015": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/e12ec76338-6746ef0266e157f06aad615b_673db96d08adfa4d56f9fa5a_IMG_2462---Moyenne.jpeg",
+      "alt": "Création du tattoo ensemble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/46ac1a9d9b-6746ef0266e157f06aad615b_673db96d08adfa4d56f9fa5a_IMG_2462---Moyenne-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/e12ec76338-6746ef0266e157f06aad615b_673db96d08adfa4d56f9fa5a_IMG_2462---Moyenne.jpeg 640w",
+      "sizes": "200px"
+    },
+    "img016": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/e779c39c9c-66e68dfaa943babedef93ed9_IMG_2096-Large.jpeg",
+      "alt": "Te tatouer",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/69960829e5-66e68dfaa943babedef93ed9_IMG_2096-Large-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/df7607b537-66e68dfaa943babedef93ed9_IMG_2096-Large-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/e779c39c9c-66e68dfaa943babedef93ed9_IMG_2096-Large.jpeg 960w",
+      "sizes": "(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
+    },
+    "img017": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/c495ffc483-68d6e607ea797d5368b81be0_IMG_2976-Large.jpeg",
+      "alt": "Tatouage cerises couleur",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/b8ac40fd14-68d6e607ea797d5368b81be0_IMG_2976-Large-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/c495ffc483-68d6e607ea797d5368b81be0_IMG_2976-Large.jpeg 720w",
+      "sizes": "(max-width: 720px) 100vw, 720px"
+    },
+    "img018": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/31a6d205a4-68d6e58708b6687b386ea37e_IMG_3095-Large.jpeg",
+      "alt": "Tatouage fleur couleur",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/18d505134e-68d6e58708b6687b386ea37e_IMG_3095-Large-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/d43f3966b7-68d6e58708b6687b386ea37e_IMG_3095-Large-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/31a6d205a4-68d6e58708b6687b386ea37e_IMG_3095-Large.jpeg 874w",
+      "sizes": "(max-width: 767px) 100vw, (max-width: 991px) 728px, 874px"
+    },
+    "img019": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/d65b34da59-67dc216d70d6a4f94676b7c8_IMG_1985-Large.jpeg",
+      "alt": "Tattoo oiseau couleur",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/eef5397f71-67dc216d70d6a4f94676b7c8_IMG_1985-Large-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/4a4d5ee0a6-67dc216d70d6a4f94676b7c8_IMG_1985-Large-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/d65b34da59-67dc216d70d6a4f94676b7c8_IMG_1985-Large.jpeg 960w",
+      "sizes": "(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
+    },
+    "img020": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/d4f66ccaa5-67c4b149a3f70f0b89d96788_Coccinelle.jpeg",
+      "alt": "Tattoo oiseau couleur",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/8b523224af-67c4b149a3f70f0b89d96788_Coccinelle-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/460e0f3ef8-67c4b149a3f70f0b89d96788_Coccinelle-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/d4f66ccaa5-67c4b149a3f70f0b89d96788_Coccinelle.jpeg 1024w",
+      "sizes": "(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
+    },
+    "img021": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/0dbee6ed91-68557056734c3b4bfa1c5ec1_feuillage-web.jpeg",
+      "alt": "Tattoo allumette couleur",
+      "srcset": "",
+      "sizes": ""
+    },
+    "img022": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/fa32c83fab-685575172dd8d0cba5f66ad8_IMG_3601-Medium.jpeg",
+      "alt": "Tattoo branche citrons couleur",
+      "srcset": "",
+      "sizes": ""
+    },
+    "img023": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/f352eec402-67dc215bd8a14bea6e89c80a_IMG_8101-Large.jpeg",
+      "alt": "Tattoo queue de baleine couleur",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/3417c9f244-67dc215bd8a14bea6e89c80a_IMG_8101-Large-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/f11779a75f-67dc215bd8a14bea6e89c80a_IMG_8101-Large-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/f352eec402-67dc215bd8a14bea6e89c80a_IMG_8101-Large.jpeg 960w",
+      "sizes": "(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
+    },
+    "img024": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/45f885c9cd-685575eeec6a9aeed3c44bf8_IMG_1192-2-Large.jpeg",
+      "alt": "Tattoo papillon couleur",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/3b90e114ad-685575eeec6a9aeed3c44bf8_IMG_1192-2-Large-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/26102fe86b-685575eeec6a9aeed3c44bf8_IMG_1192-2-Large-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/45f885c9cd-685575eeec6a9aeed3c44bf8_IMG_1192-2-Large.jpeg 856w",
+      "sizes": "(max-width: 767px) 100vw, (max-width: 991px) 728px, 856px"
+    },
+    "img025": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/e303d0ed88-67dc215b5c812d698528b1f4_66DC2B0E-5EEC-4EC2-ADBD-C82E0420F1EF-2.jpg",
+      "alt": "Tatouage coccinelle",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/706cb66519-67dc215b5c812d698528b1f4_66DC2B0E-5EEC-4EC2-ADBD-C82E0420F1EF-2-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/e303d0ed88-67dc215b5c812d698528b1f4_66DC2B0E-5EEC-4EC2-ADBD-C82E0420F1EF-2.jpg 567w",
+      "sizes": "100vw"
+    },
+    "img026": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/8388c8c669-674732d4561636bd5998a5df_66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a-Large.jpeg",
+      "alt": "Tattoo branche d'eucalyptus",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/0fede71d54-674732d4561636bd5998a5df_66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a-Large-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/8388c8c669-674732d4561636bd5998a5df_66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a-Large.jpeg 720w",
+      "sizes": "(max-width: 720px) 100vw, 720px"
+    },
+    "img027": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/765f15c1c5-674732d41371830372650cdf_66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c-Large.jpeg",
+      "alt": "Tatouage chat noir et dot",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/354f3b443f-674732d41371830372650cdf_66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c-Large-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/765f15c1c5-674732d41371830372650cdf_66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c-Large.jpeg 666w",
+      "sizes": "(max-width: 666px) 100vw, 666px"
+    },
+    "img028": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/41ec31309f-67dc2303c1a71d61e19c2384_IMG_1664-Large.jpeg",
+      "alt": "Tattoo méduse couleur",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/873ec99774-67dc2303c1a71d61e19c2384_IMG_1664-Large-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/3a6d3b56cb-67dc2303c1a71d61e19c2384_IMG_1664-Large-p-800.jpeg 800w, /assets/vendor/cdn-prod-website-files-com/41ec31309f-67dc2303c1a71d61e19c2384_IMG_1664-Large.jpeg 1061w",
+      "sizes": "100vw"
+    },
+    "img029": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/f711d2456a-674732d47d397905c77154d5_66e685ac95c2eb7826fb9e0a_FDCCC07A-A213-4BF1-BC3D-7D2362308077_1_102_a-Large.jpeg",
+      "alt": "Tatouage crevette couleur",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/e196b5e837-674732d47d397905c77154d5_66e685ac95c2eb7826fb9e0a_FDCCC07A-A213-4BF1-BC3D-7D2362308077_1_102_a-Large-p-500.jpeg 500w, /assets/vendor/cdn-prod-website-files-com/f711d2456a-674732d47d397905c77154d5_66e685ac95c2eb7826fb9e0a_FDCCC07A-A213-4BF1-BC3D-7D2362308077_1_102_a-Large.jpeg 720w",
+      "sizes": "(max-width: 720px) 100vw, 720px"
+    },
+    "img030": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/5ad77629d9-66dee17f962b82764bf19716_Quote-Icon.svg",
+      "alt": "Quote Icon",
+      "srcset": "",
+      "sizes": ""
+    },
+    "img031": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/21c49fc583-66dee17f962b82764bf196fb_workflow-image.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/795cee3281-66dee17f962b82764bf196fb_workflow-20image-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/21c49fc583-66dee17f962b82764bf196fb_workflow-image.webp 508w",
+      "sizes": "100vw"
+    },
+    "img032": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/137706644e-66dee17f962b82764bf19717_Testimonial-Image.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/07c7f6538d-66dee17f962b82764bf19717_Testimonial-20Image-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/137706644e-66dee17f962b82764bf19717_Testimonial-Image.webp 589w",
+      "sizes": "100vw"
+    },
+    "img033": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/21c49fc583-66dee17f962b82764bf196fb_workflow-image.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/795cee3281-66dee17f962b82764bf196fb_workflow-20image-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/21c49fc583-66dee17f962b82764bf196fb_workflow-image.webp 508w",
+      "sizes": "100vw"
+    },
+    "img034": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/d70d4fe6c8-66dee17f962b82764bf19719_Map-pin.svg",
+      "alt": "Map Icon",
+      "srcset": "",
+      "sizes": ""
+    },
+    "img035": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/517f972e42-66dee17f962b82764bf1971c_image-13.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/0f8ebdf23f-66dee17f962b82764bf1971c_image-2013-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/517f972e42-66dee17f962b82764bf1971c_image-13.webp 628w",
+      "sizes": "100vw"
+    },
+    "img036": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/5788ae6a34-66dee17f962b82764bf1971d_image-9.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/0986bd7293-66dee17f962b82764bf1971d_image-209-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/5788ae6a34-66dee17f962b82764bf1971d_image-9.webp 778w",
+      "sizes": "100vw"
+    },
+    "img037": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/371301fcf9-66dee17f962b82764bf1971f_image-10.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/45388fd759-66dee17f962b82764bf1971f_image-2010-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/371301fcf9-66dee17f962b82764bf1971f_image-10.webp 780w",
+      "sizes": "100vw"
+    },
+    "img038": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/628a177955-66dee17f962b82764bf1971b_image-11.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/fd0d06e657-66dee17f962b82764bf1971b_image-2011-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/628a177955-66dee17f962b82764bf1971b_image-11.webp 777w",
+      "sizes": "(max-width: 767px) 100vw, (max-width: 991px) 728px, 777px"
+    },
+    "img039": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/3144bb9027-66dee17f962b82764bf1971e_image-28.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/139c04afbb-66dee17f962b82764bf1971e_image-2028-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/3144bb9027-66dee17f962b82764bf1971e_image-28.webp 630w",
+      "sizes": "100vw"
+    },
+    "img040": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/c52295fdbc-66dee17f962b82764bf196f5_Mask-group-1.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "",
+      "sizes": ""
+    },
+    "img041": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/517f972e42-66dee17f962b82764bf1971c_image-13.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/0f8ebdf23f-66dee17f962b82764bf1971c_image-2013-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/517f972e42-66dee17f962b82764bf1971c_image-13.webp 628w",
+      "sizes": "100vw"
+    },
+    "img042": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/5788ae6a34-66dee17f962b82764bf1971d_image-9.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/0986bd7293-66dee17f962b82764bf1971d_image-209-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/5788ae6a34-66dee17f962b82764bf1971d_image-9.webp 778w",
+      "sizes": "100vw"
+    },
+    "img043": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/371301fcf9-66dee17f962b82764bf1971f_image-10.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/45388fd759-66dee17f962b82764bf1971f_image-2010-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/371301fcf9-66dee17f962b82764bf1971f_image-10.webp 780w",
+      "sizes": "100vw"
+    },
+    "img044": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/628a177955-66dee17f962b82764bf1971b_image-11.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/fd0d06e657-66dee17f962b82764bf1971b_image-2011-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/628a177955-66dee17f962b82764bf1971b_image-11.webp 777w",
+      "sizes": "(max-width: 767px) 100vw, (max-width: 991px) 728px, 777px"
+    },
+    "img045": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/3144bb9027-66dee17f962b82764bf1971e_image-28.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/139c04afbb-66dee17f962b82764bf1971e_image-2028-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/3144bb9027-66dee17f962b82764bf1971e_image-28.webp 630w",
+      "sizes": "100vw"
+    },
+    "img046": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/c52295fdbc-66dee17f962b82764bf196f5_Mask-group-1.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "",
+      "sizes": ""
+    },
+    "img047": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/517f972e42-66dee17f962b82764bf1971c_image-13.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/0f8ebdf23f-66dee17f962b82764bf1971c_image-2013-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/517f972e42-66dee17f962b82764bf1971c_image-13.webp 628w",
+      "sizes": "100vw"
+    },
+    "img048": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/5788ae6a34-66dee17f962b82764bf1971d_image-9.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/0986bd7293-66dee17f962b82764bf1971d_image-209-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/5788ae6a34-66dee17f962b82764bf1971d_image-9.webp 778w",
+      "sizes": "100vw"
+    },
+    "img049": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/371301fcf9-66dee17f962b82764bf1971f_image-10.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/45388fd759-66dee17f962b82764bf1971f_image-2010-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/371301fcf9-66dee17f962b82764bf1971f_image-10.webp 780w",
+      "sizes": "100vw"
+    },
+    "img050": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/628a177955-66dee17f962b82764bf1971b_image-11.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/fd0d06e657-66dee17f962b82764bf1971b_image-2011-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/628a177955-66dee17f962b82764bf1971b_image-11.webp 777w",
+      "sizes": "(max-width: 767px) 100vw, (max-width: 991px) 728px, 777px"
+    },
+    "img051": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/3144bb9027-66dee17f962b82764bf1971e_image-28.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "/assets/vendor/cdn-prod-website-files-com/139c04afbb-66dee17f962b82764bf1971e_image-2028-p-500.jpg 500w, /assets/vendor/cdn-prod-website-files-com/3144bb9027-66dee17f962b82764bf1971e_image-28.webp 630w",
+      "sizes": "100vw"
+    },
+    "img052": {
+      "src": "/assets/vendor/cdn-prod-website-files-com/c52295fdbc-66dee17f962b82764bf196f5_Mask-group-1.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "srcset": "",
+      "sizes": ""
+    }
+  },
+  "links": {
+    "link001": "/",
+    "link002": "/",
+    "link003": "/",
+    "link004": "/apropos",
+    "link005": "/faq",
+    "link006": "/contact",
+    "link007": "mailto:naiadestattoo@gmail.com",
+    "link008": "tel:+33981868220",
+    "link009": "https://www.instagram.com/naiadestattoo/",
+    "link010": "/contact",
+    "link011": "https://www.google.com/search?sca_esv=305f84db2fc9b830&rlz=1C5CHFA_enFR1089FR1089&uds=ADvngMjcH0KdF7qGWtwTBrP0nt7d-yRVfdNV6hhPVy8AF3s7HjqDzHnFmRDdun7E46AD0cfHKNWz_nF3tZjbsRYzEwpmJkJcv13wTOUtWLlBGXywcPbES8X6RBLuh9MN3shZhdqEowm8&si=ACC90nwjPmqJHrCEt6ewASzksVFQDX8zco_7MgBaIawvaF4-7qbBLXkytzOLhJmWoLv2mzwJLYX9EcCYc5p1ctpKyz580VWwBJX_jHa1xPGnirG0mWZrACk%3D&q=Na%C3%AFades+Tattoo+Avis&sa=X&ved=2ahUKEwiX2a_Mlr6KAxVzUaQEHfKLMd0Q3PALegQIPRAF&biw=1470&bih=798&dpr=2",
+    "link012": "/faq",
+    "link013": "/contact",
+    "link014": "/contact",
+    "link015": "/contact",
+    "link016": "https://www.instagram.com/",
+    "link017": "https://maps.app.goo.gl/qSRW5Kk9gbhzwJPj7",
+    "link018": "https://www.instagram.com/naiadestattoo",
+    "link019": "mailto:naiadestattoo@gmail.com?subject=Demande%20de%20renseignement",
+    "link020": "tel:1800.456.568",
+    "link021": "/",
+    "link022": "/apropos",
+    "link023": "/portfolio",
+    "link024": "https://rose-marble-portfolio.webflow.io/portfolios/amelia-rodriguez",
+    "link025": "/contact",
+    "link026": "/faq",
+    "link027": "#",
+    "link028": "#",
+    "link029": "https://rose-marble-portfolio.webflow.io/404"
+  },
+  "form": {}
+}

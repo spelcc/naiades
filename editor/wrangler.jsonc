@@ -1,0 +1,29 @@
+{
+	"$schema": "../node_modules/wrangler/config-schema.json",
+	"name": "naiades-keystatic",
+	"main": "@astrojs/cloudflare/entrypoints/server",
+	"compatibility_date": "2026-09-29",
+	"compatibility_flags": [
+		"nodejs_compat",
+		"global_fetch_strictly_public"
+	],
+	"assets": {
+		"binding": "ASSETS",
+		"directory": "./dist"
+	},
+	"routes": [
+		{
+			"pattern": "naiades.irz.fr",
+			"custom_domain": true
+		}
+	],
+	"observability": {
+		"enabled": true
+	},
+	"kv_namespaces": [
+		{
+			"binding": "CONTACT_SUBMISSIONS",
+			"id": "bf1ed0f1dfd1428c9949e0ab63e6dc08"
+		}
+	]
+}

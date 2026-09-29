@@ -1,0 +1,918 @@
+{
+  "title": "Naïades Tattoo - Tatoueuse à Lyon",
+  "lang": "en",
+  "bodyText": "Naïades Tattoo Découvrez mes tatouages colorés Moi c'est Estelle / Naïades ! Je suis tatoueuse à Lyon et j'encre vos peaux d'oeuvres singulières et colorées. J'ai un style unique crayonné, aux aplats de gouaches et avec ma propre palette de couleurs pastels. La nature, avec ses merveilleux animaux, est une source d'inspiration inépuisable pour moi ! Prendre un RDV Quelques avis de mes client·e·s d'amour 🥰 \"Énorme coup de cœur pour un flash qui date de quelques années, mais ça valait le coup d’attendre, j’ai passé une excellente journée avec Estelle, c’est une tatoueuse très professionnelle et très talentueuse et d’une gentillesse incomparable, je la recommande à tous les Lyonnais, si elle fait un guest dans votre ville, n’hésitez pas une seule seconde ! Encore 1000 fois merci Estelle, tu es géniale !\" Andréa \"Tatoueuse au top! [...]. Suite à un événement dans ma vie, j'étais sûre qu'elle serait la bonne personne pour marquer cette étape dans ma peau! [...] Estelle est ultra bienveillante, accessible et à l'écoute de ses client.e.s. Ce n'est pas qu'une vitrine, elle se met vraiment en 4 pour que son travail soit au top pour nous et qu'on se sente bien sous ses aiguilles! Franchement elle mérite de se faire connaître. Alors allez la voir, vous serez forcément content.e.s!\" Stéphanie \"Super séance pour la réalisation d'un flash ! Tatoueuse disponible, à l'écoute, douce et super sympa (safe place). Tatouage incroyable !! Merci encore Estelle !\" Marina \"Un moment rempli de bienveillance, un tatouage coloré et rempli de peps, Estelle nous met tout de suite en confiance et tout au long de la session, merci 🫶\" Justine Voir tous les commentaires → Des questions ? Je suis là pour répondre à toutes tes questions. N'hésite pas à me contacter ou lire la FAQ ☺️ FAQ Me contacter À propos de moi Depuis l’enfance, le dessin est une passion qui ne m’a jamais quittée, et depuis deux ans, j’ai la chance de la partager avec vous par le tatouage. Ce qui me tient à cœur, c’est de tisser avec vous une relation unique et encrer votre peau de tatouages pleins de peps et de sens. À chaque projet, je suis à l’écoute et m’adapte avec soin pour que vos idées prennent vie dans un cadre respectueux et chaleureux. Naïades Me contacter Les étapes d'un projet de tatouage Rencontre Rdv Discussion Les rdvs discussions permettent de discuter de ton projet, d’apprendre à se connaître, c’est un moment privilégié entre toi et moi qui me permettra de mieux comprendre ton projet et tes besoins. Création Le dessin L'étape de création de ton tatouage se fait avec toi. Nous échangerons sur le dessin, je prendrai tes retours en compte pour que le tatouage répondre parfaitement à tes attentes. Le tatouage Te tatouer Je t'accueille dans un environnement conforme et chaleureux. Je m'efforcerai de m'adapter à tes besoins spécifiques pendant la séance. Rien n'est tabou, tu as le droit de me poser autant de questions que tu souhaites :) Quelques tatouages réalisés Naïades Tattoo 22 rue du Cdt Faurax, 69006 Lyon @naiadestattoo naiadestattoo@gmail.com 0981868220 Accueil À propos Me contacter FAQ Copyright © 2024 Naïades Tattoo. All rights reserved.",
+  "bodyStyle": {
+    "fontFamily": "\"Work Sans\", sans-serif",
+    "fontSize": "14px",
+    "color": "rgb(201, 245, 238)",
+    "backgroundColor": "rgb(255, 255, 255)"
+  },
+  "sections": [
+    {
+      "i": 0,
+      "tag": "div",
+      "className": "navbar w-nav",
+      "text": "Naïades TattooNaïades TattooAccueilÀ proposFAQMe contacter naiadestattoo@gmail.com 09 81 86 82 20",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 100,
+        "top": 0,
+        "right": 1440,
+        "bottom": 100,
+        "left": 0
+      },
+      "bg": "rgb(249, 245, 255)"
+    },
+    {
+      "i": 1,
+      "tag": "section",
+      "className": "home-hero-section light-chocolate-bg",
+      "text": "Découvrez mes tatouages colorésMoi c'est Estelle / Naïades ! Je suis tatoueuse à Lyon et j'encre vos peaux d'oeuvres singulières et colorées. J'ai un style unique crayonné, aux aplats de gouaches et avec ma propre palette de couleurs pastels. La nature, avec ses merveilleux animaux, est une source d'inspiration inépuisable pour moi !Prendre un RDV",
+      "rect": {
+        "x": 0,
+        "y": 99,
+        "width": 1440,
+        "height": 936,
+        "top": 99,
+        "right": 1440,
+        "bottom": 1035,
+        "left": 0
+      },
+      "bg": "rgb(8, 105, 104)"
+    },
+    {
+      "i": 2,
+      "tag": "section",
+      "className": "services-section lighter-chocolate-bg",
+      "text": "Quelques avis de mes client·e·s d'amour 🥰 \"Énorme coup de cœur pour un flash qui date de quelques années, mais ça valait le coup d’attendre, j’ai passé une excellente journée avec Estelle, c’est une tatoueuse très professionnelle et très talentueuse et d’une gentillesse incomparable, je la recommande à tous les Lyonnais, si elle fait un guest dans votre ville, n’hésitez pas une seule seconde ! Encore 1000 fois merci Estelle, tu es géniale !\"Andréa \"Tatoueuse au top! [...]. Suite à un événement dans ma vie, j'étais sûre qu'elle serait la bonne personne pour marquer cette étape dans ma peau! [...] Estelle est ultra bienveillante, accessible et à l'écoute de ses client.e.s. Ce n'est pas qu'une vitrine, elle se met vraiment en 4 pour que son travail soit au top pour nous et qu'on se sente bien sous ses aiguilles! Franchement elle mérite de se faire connaître. Alors allez la voir, vous serez forcément content.e.s!\"Stéphanie \"Super séance pour la réalisation d'un flash ! Tatoueuse disponibl",
+      "rect": {
+        "x": 0,
+        "y": 1035,
+        "width": 1440,
+        "height": 819.59375,
+        "top": 1035,
+        "right": 1440,
+        "bottom": 1854.59375,
+        "left": 0
+      },
+      "bg": "rgb(8, 105, 104)"
+    },
+    {
+      "i": 3,
+      "tag": "section",
+      "className": "services-section lighter-chocolate-bg",
+      "text": "Des questions ?Je suis là pour répondre à toutes tes questions. N'hésite pas à me contacter ou lire la FAQ ☺️FAQMe contacter",
+      "rect": {
+        "x": 0,
+        "y": 1854.59375,
+        "width": 1440,
+        "height": 280,
+        "top": 1854.59375,
+        "right": 1440,
+        "bottom": 2134.59375,
+        "left": 0
+      },
+      "bg": "rgb(8, 105, 104)"
+    },
+    {
+      "i": 4,
+      "tag": "section",
+      "className": "about-section light-chocolate-bg",
+      "text": "À propos de moiDepuis l’enfance, le dessin est une passion qui ne m’a jamais quittée, et depuis deux ans, j’ai la chance de la partager avec vous par le tatouage. Ce qui me tient à cœur, c’est de tisser avec vous une relation unique et encrer votre peau de tatouages pleins de peps et de sens. À chaque projet, je suis à l’écoute et m’adapte avec soin pour que vos idées prennent vie dans un cadre respectueux et chaleureux.NaïadesMe contacter",
+      "rect": {
+        "x": 0,
+        "y": 2134.59375,
+        "width": 1440,
+        "height": 735,
+        "top": 2134.59375,
+        "right": 1440,
+        "bottom": 2869.59375,
+        "left": 0
+      },
+      "bg": "rgb(249, 245, 255)"
+    },
+    {
+      "i": 5,
+      "tag": "section",
+      "className": "workflow-section lighter-chocolate-bg",
+      "text": "Les étapes d'un projet de tatouageRencontreRdv DiscussionLes rdvs discussions permettent de discuter de ton projet, d’apprendre à se connaître, c’est un moment privilégié entre toi et moi qui me permettra de mieux comprendre ton projet et tes besoins.CréationLe dessinL'étape de création de ton tatouage se fait avec toi. Nous échangerons sur le dessin, je prendrai tes retours en compte pour que le tatouage répondre parfaitement à tes attentes.Le tatouageTe tatouerJe t'accueille dans un environnement conforme et chaleureux. Je m'efforcerai de m'adapter à tes besoins spécifiques pendant la séance. Rien n'est tabou, tu as le droit de me poser autant de questions que tu souhaites :)",
+      "rect": {
+        "x": 0,
+        "y": 2869.59375,
+        "width": 1440,
+        "height": 1101,
+        "top": 2869.59375,
+        "right": 1440,
+        "bottom": 3970.59375,
+        "left": 0
+      },
+      "bg": "rgb(249, 245, 255)"
+    },
+    {
+      "i": 6,
+      "tag": "section",
+      "className": "showcase-section light-chocolate-bg hidden-sections",
+      "text": "Quelques tatouages réalisés 12345678910111213",
+      "rect": {
+        "x": 0,
+        "y": 3970.59375,
+        "width": 1440,
+        "height": 994,
+        "top": 3970.59375,
+        "right": 1440,
+        "bottom": 4964.59375,
+        "left": 0
+      },
+      "bg": "rgb(8, 105, 104)"
+    },
+    {
+      "i": 7,
+      "tag": "section",
+      "className": "testimonial-section lighter-chocolate-bg hide-element",
+      "text": "...my clients say“Beautiful memories to cherish forever”\"I had the pleasure of hiring Rose for a personal portrait session. Their warm and friendly approach instantly put me at ease, resulting in natural and stunning photographs that truly reflected my personality.Susan SchuetteColumbia, MO“Beautiful memories to cherish forever”\"I had the pleasure of hiring [Your Name] for a personal portrait session. Their warm and friendly approach instantly put me at ease, resulting in natural and stunning photographs that truly reflected my personality.Susan SchuetteColumbia, MO“Beautiful memories to cherish forever”\"I had the pleasure of hiring Rose for a personal portrait session. Their warm and friendly approach instantly put me at ease, resulting in natural and stunning photographs that truly reflected my personality.Susan SchuetteColumbia, MO",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "bg": "rgb(201, 245, 238)"
+    },
+    {
+      "i": 8,
+      "tag": "section",
+      "className": "cta-section light-chocolate-bg hide-element",
+      "text": "Picture-perfect services for every occasionReach out to me4840 Flint Street Adairsville, GA 30103Contact",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "bg": "rgb(201, 245, 238)"
+    },
+    {
+      "i": 9,
+      "tag": "section",
+      "className": "social-posts-section lighter-chocolate-bg hide-element",
+      "text": "Capturing moments, creating memoriesJoin my community and stay updated with the latest trends and tips!Follow on",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "bg": "rgb(8, 105, 104)"
+    },
+    {
+      "i": 10,
+      "tag": "footer",
+      "className": "footer",
+      "text": "Naïades Tattoo 22 rue du Cdt Faurax, 69006 Lyon @naiadestattoo naiadestattoo@gmail.com 0981868220AccueilÀ proposPortfolioPortfolio SingleMe contacterFAQLicenseChangelog404Copyright © 2024 Naïades Tattoo. All rights reserved.",
+      "rect": {
+        "x": 0,
+        "y": 4964.59375,
+        "width": 1440,
+        "height": 525,
+        "top": 4964.59375,
+        "right": 1440,
+        "bottom": 5489.59375,
+        "left": 0
+      },
+      "bg": "rgb(249, 245, 255)"
+    },
+    {
+      "i": 11,
+      "tag": "script",
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "i": 12,
+      "tag": "script",
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "i": 13,
+      "tag": "script",
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "i": 14,
+      "tag": "script",
+      "className": "",
+      "text": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0,
+        "left": 0
+      },
+      "bg": "rgba(0, 0, 0, 0)"
+    }
+  ],
+  "headings": [
+    {
+      "tag": "h1",
+      "text": "Naïades Tattoo",
+      "className": "",
+      "font": "Oranienbaum, sans-serif",
+      "size": "38px",
+      "weight": "700",
+      "color": "rgb(8, 105, 104)"
+    },
+    {
+      "tag": "h1",
+      "text": "Naïades Tattoo",
+      "className": "heading",
+      "font": "Oranienbaum, sans-serif",
+      "size": "38px",
+      "weight": "700",
+      "color": "rgb(8, 105, 104)"
+    },
+    {
+      "tag": "h1",
+      "text": "Découvrez mes tatouages colorés",
+      "className": "display displaydark",
+      "font": "Oranienbaum, sans-serif",
+      "size": "94px",
+      "weight": "400",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "h2",
+      "text": "Quelques avis de mes client·e·s d'amour 🥰",
+      "className": "uui-heading-medium",
+      "font": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "size": "36px",
+      "weight": "600",
+      "color": "rgb(16, 24, 40)"
+    },
+    {
+      "tag": "h3",
+      "text": "Des questions ?",
+      "className": "uui-heading-small",
+      "font": "\"Work Sans\", sans-serif",
+      "size": "30px",
+      "weight": "600",
+      "color": "rgb(16, 24, 40)"
+    },
+    {
+      "tag": "h3",
+      "text": "À propos de moi",
+      "className": "h1 h1-light",
+      "font": "Oranienbaum, sans-serif",
+      "size": "80px",
+      "weight": "400",
+      "color": "rgb(8, 105, 104)"
+    },
+    {
+      "tag": "h4",
+      "text": "Les étapes d'un projet de tatouage",
+      "className": "h1 h1-light",
+      "font": "Oranienbaum, sans-serif",
+      "size": "80px",
+      "weight": "400",
+      "color": "rgb(8, 105, 104)"
+    },
+    {
+      "tag": "h5",
+      "text": "Rdv Discussion",
+      "className": "h4",
+      "font": "Oranienbaum, sans-serif",
+      "size": "38px",
+      "weight": "400",
+      "color": "rgb(8, 105, 104)"
+    },
+    {
+      "tag": "h5",
+      "text": "Le dessin",
+      "className": "h4",
+      "font": "Oranienbaum, sans-serif",
+      "size": "38px",
+      "weight": "400",
+      "color": "rgb(8, 105, 104)"
+    },
+    {
+      "tag": "h5",
+      "text": "Te tatouer",
+      "className": "h4",
+      "font": "Oranienbaum, sans-serif",
+      "size": "38px",
+      "weight": "400",
+      "color": "rgb(8, 105, 104)"
+    },
+    {
+      "tag": "h3",
+      "text": "Quelques tatouages réalisés",
+      "className": "h1",
+      "font": "Oranienbaum, sans-serif",
+      "size": "80px",
+      "weight": "400",
+      "color": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "h3",
+      "text": "...my clients say",
+      "className": "h1 display-inline",
+      "font": "Oranienbaum, sans-serif",
+      "size": "80px",
+      "weight": "400",
+      "color": "rgb(8, 105, 104)"
+    },
+    {
+      "tag": "h3",
+      "text": "Picture-perfect services for every occasion",
+      "className": "h1 h1-light",
+      "font": "Oranienbaum, sans-serif",
+      "size": "80px",
+      "weight": "400",
+      "color": "rgb(8, 105, 104)"
+    },
+    {
+      "tag": "h3",
+      "text": "Capturing moments, creating memories",
+      "className": "h1 h1-light",
+      "font": "Oranienbaum, sans-serif",
+      "size": "80px",
+      "weight": "400",
+      "color": "rgb(8, 105, 104)"
+    },
+    {
+      "tag": "h1",
+      "text": "Naïades Tattoo",
+      "className": "",
+      "font": "Oranienbaum, sans-serif",
+      "size": "38px",
+      "weight": "700",
+      "color": "rgb(8, 105, 104)"
+    }
+  ],
+  "images": [
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c.jpeg",
+      "alt": "",
+      "className": "nav-image-1_1",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/6729f7277cc11a0b398e9b9b_IMG_6913.jpeg",
+      "alt": "",
+      "className": "nav-image-1_2",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf1975b_Mask%20group-2.webp",
+      "alt": "",
+      "className": "nav-image-1_3",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c.jpeg",
+      "alt": "",
+      "className": "nav-image-1_4",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a.jpeg",
+      "alt": "",
+      "className": "nav-image-2_1",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/6729f49927c3fb14b5201c56_IMG_6280.jpeg",
+      "alt": "",
+      "className": "nav-image-2_2",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/6729f49927c3fb14b5201c56_IMG_6280.jpeg",
+      "alt": "",
+      "className": "nav-image-2_3",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a.jpeg",
+      "alt": "",
+      "className": "nav-image-2_4",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/674705d77b32170308dd7518_6729ea4f75e398874d080b3f_IMG_6895%20Medium.jpeg",
+      "alt": "Tatouage baleine",
+      "className": "home-hero-image-1",
+      "width": 940,
+      "height": 1132
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/685570567ac5278ddcb7aad4_allumette%20web.jpeg",
+      "alt": "Tatouage oranges",
+      "className": "home-hero-image-2",
+      "width": 256,
+      "height": 320
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/68557056885604aeade2ec2c_coccinelle%20web.jpeg",
+      "alt": "Tatouage couleur coccinelle",
+      "className": "home-hero-image-3",
+      "width": 256,
+      "height": 320
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/6729eb5c5942a68258d71ae7_IMG_3061-p-500.jpeg",
+      "alt": "",
+      "className": "about-image-1",
+      "width": 180,
+      "height": 240
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66e68c06ac6cecdbea38103f_491E72FD-40EC-4FC8-8779-DF0D37921DC3_4_5005_c.jpeg",
+      "alt": "",
+      "className": "about-image-2",
+      "width": 360,
+      "height": 570
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/6746ed9b4db3953c655bf437_6729e7f2a77c22b44da0ff19_IMG_3788%20-%20Moyenne.jpeg",
+      "alt": "Se rencontrer",
+      "className": "workflow-image",
+      "width": 480,
+      "height": 640
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/6746ef0266e157f06aad615b_673db96d08adfa4d56f9fa5a_IMG_2462%20-%20Moyenne-p-500.jpeg",
+      "alt": "Création du tattoo ensemble",
+      "className": "workflow-image",
+      "width": 200,
+      "height": 156
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66e68dfaa943babedef93ed9_IMG_2096%20Large.jpeg",
+      "alt": "Te tatouer",
+      "className": "workflow-image squared-image",
+      "width": 940,
+      "height": 1253
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/68d6e607ea797d5368b81be0_IMG_2976%20Large.jpeg",
+      "alt": "Tatouage cerises couleur",
+      "className": "upcoming-photoshoot-slide-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/68d6e58708b6687b386ea37e_IMG_3095%20Large.jpeg",
+      "alt": "Tatouage fleur couleur",
+      "className": "upcoming-photoshoot-slide-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/67dc216d70d6a4f94676b7c8_IMG_1985%20Large.jpeg",
+      "alt": "Tattoo oiseau couleur",
+      "className": "upcoming-photoshoot-slide-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/67c4b149a3f70f0b89d96788_Coccinelle.jpeg",
+      "alt": "Tattoo oiseau couleur",
+      "className": "upcoming-photoshoot-slide-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/68557056734c3b4bfa1c5ec1_feuillage%20web.jpeg",
+      "alt": "Tattoo allumette couleur",
+      "className": "upcoming-photoshoot-slide-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/685575172dd8d0cba5f66ad8_IMG_3601%20Medium.jpeg",
+      "alt": "Tattoo branche citrons couleur",
+      "className": "upcoming-photoshoot-slide-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/67dc215bd8a14bea6e89c80a_IMG_8101%20Large.jpeg",
+      "alt": "Tattoo queue de baleine couleur",
+      "className": "upcoming-photoshoot-slide-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/685575eeec6a9aeed3c44bf8_IMG_1192%202%20Large.jpeg",
+      "alt": "Tattoo papillon couleur",
+      "className": "upcoming-photoshoot-slide-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/67dc215b5c812d698528b1f4_66DC2B0E-5EEC-4EC2-ADBD-C82E0420F1EF%202.jpg",
+      "alt": "Tatouage coccinelle",
+      "className": "upcoming-photoshoot-slide-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/674732d4561636bd5998a5df_66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_102_a%20Large.jpeg",
+      "alt": "Tattoo branche d'eucalyptus",
+      "className": "upcoming-photoshoot-slide-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/674732d41371830372650cdf_66e685afa5b87f5b70587146_C14FE918-2E0B-4A1E-A322-22494E1D94B6_1_105_c%20Large.jpeg",
+      "alt": "Tatouage chat noir et dot",
+      "className": "upcoming-photoshoot-slide-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/67dc2303c1a71d61e19c2384_IMG_1664%20Large.jpeg",
+      "alt": "Tattoo méduse couleur",
+      "className": "upcoming-photoshoot-slide-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/674732d47d397905c77154d5_66e685ac95c2eb7826fb9e0a_FDCCC07A-A213-4BF1-BC3D-7D2362308077_1_102_a%20Large.jpeg",
+      "alt": "Tatouage crevette couleur",
+      "className": "upcoming-photoshoot-slide-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf19716_Quote%20Icon.svg",
+      "alt": "Quote Icon",
+      "className": "quote-icon",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf196fb_workflow%20image.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "testimonial-slide-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf19717_Testimonial%20Image.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "testimonial-slide-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf196fb_workflow%20image.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "testimonial-slide-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf19719_Map%20pin.svg",
+      "alt": "Map Icon",
+      "className": "cta-address-icon",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf1971c_image%2013.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf1971d_image%209.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf1971f_image%2010.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf1971b_image%2011.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf1971e_image%2028.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf196f5_Mask%20group-1.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf1971c_image%2013.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf1971d_image%209.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf1971f_image%2010.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf1971b_image%2011.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf1971e_image%2028.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf196f5_Mask%20group-1.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf1971c_image%2013.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf1971d_image%209.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf1971f_image%2010.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf1971b_image%2011.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf1971e_image%2028.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    },
+    {
+      "src": "https://cdn.prod.website-files.com/66dee17e962b82764bf195ef/66dee17f962b82764bf196f5_Mask%20group-1.webp",
+      "alt": "Photo Clicked By Rose Marble",
+      "className": "social-post-image",
+      "width": 0,
+      "height": 0
+    }
+  ],
+  "links": [
+    {
+      "text": "Naïades Tattoo",
+      "href": "https://www.naiadestattoo.com/",
+      "className": "brand w-nav-brand w--current"
+    },
+    {
+      "text": "Naïades Tattoo",
+      "href": "https://www.naiadestattoo.com/",
+      "className": "nav-logo-wrapper w-inline-block w--current"
+    },
+    {
+      "text": "Accueil",
+      "href": "https://www.naiadestattoo.com/",
+      "className": "nav-link w-nav-link w--current"
+    },
+    {
+      "text": "À propos",
+      "href": "https://www.naiadestattoo.com/apropos",
+      "className": "nav-link w-nav-link"
+    },
+    {
+      "text": "FAQ",
+      "href": "https://www.naiadestattoo.com/faq",
+      "className": "nav-link w-nav-link"
+    },
+    {
+      "text": "Me contacter",
+      "href": "https://www.naiadestattoo.com/contact",
+      "className": "nav-link w-nav-link"
+    },
+    {
+      "text": "naiadestattoo@gmail.com",
+      "href": "mailto:naiadestattoo@gmail.com",
+      "className": "nav-footer-link-block w-inline-block"
+    },
+    {
+      "text": "09 81 86 82 20",
+      "href": "tel:+33981868220",
+      "className": "nav-footer-link-block w-inline-block"
+    },
+    {
+      "text": "",
+      "href": "https://www.instagram.com/naiadestattoo/",
+      "className": "social-link w-inline-block"
+    },
+    {
+      "text": "Prendre un RDV",
+      "href": "https://www.naiadestattoo.com/contact",
+      "className": "uui-button-2-reverse w-inline-block"
+    },
+    {
+      "text": "Voir tous les commentaires →",
+      "href": "https://www.google.com/search?sca_esv=305f84db2fc9b830&rlz=1C5CHFA_enFR1089FR1089&uds=ADvngMjcH0KdF7qGWtwTBrP0nt7d-yRVfdNV6hhPVy8AF3s7HjqDzHnFmRDdun7E46AD0cfHKNWz_nF3tZjbsRYzEwpmJkJcv13wTOUtWLlBGXywcPbES8X6RBLuh9MN3shZhdqEowm8&si=ACC90nwjPmqJHrCEt6ewASzksVFQDX8zco_7MgBaIawvaF4-7qbBLXkytzOLhJmWoLv2mzwJLYX9EcCYc5p1ctpKyz580VWwBJX_jHa1xPGnirG0mWZrACk%3D&q=Na%C3%AFades+Tattoo+Avis&sa=X&ved=2ahUKEwiX2a_Mlr6KAxVzUaQEHfKLMd0Q3PALegQIPRAF&biw=1470&bih=798&dpr=2",
+      "className": "link-2"
+    },
+    {
+      "text": "FAQ",
+      "href": "https://www.naiadestattoo.com/faq",
+      "className": "uui-button-secondary-gray-2 w-inline-block"
+    },
+    {
+      "text": "Me contacter",
+      "href": "https://www.naiadestattoo.com/contact",
+      "className": "uui-button-2 w-inline-block"
+    },
+    {
+      "text": "Me contacter",
+      "href": "https://www.naiadestattoo.com/contact",
+      "className": "uui-button-2 w-inline-block"
+    },
+    {
+      "text": "Contact",
+      "href": "https://www.naiadestattoo.com/contact",
+      "className": "uui-button-2-reverse w-inline-block"
+    },
+    {
+      "text": "Follow on",
+      "href": "https://www.instagram.com/",
+      "className": "uui-button-2-reverse w-inline-block"
+    },
+    {
+      "text": "22 rue du Cdt Faurax, 69006 Lyon",
+      "href": "https://maps.app.goo.gl/qSRW5Kk9gbhzwJPj7",
+      "className": "footer-contact-detail-row w-inline-block"
+    },
+    {
+      "text": "@naiadestattoo",
+      "href": "https://www.instagram.com/naiadestattoo",
+      "className": "footer-contact-detail-row link w-inline-block"
+    },
+    {
+      "text": "naiadestattoo@gmail.com",
+      "href": "mailto:naiadestattoo@gmail.com?subject=Demande%20de%20renseignement",
+      "className": "footer-contact-detail-row link w-inline-block"
+    },
+    {
+      "text": "0981868220",
+      "href": "tel:1800.456.568",
+      "className": "footer-contact-detail-row link w-inline-block"
+    },
+    {
+      "text": "Accueil",
+      "href": "https://www.naiadestattoo.com/",
+      "className": "footer-link w--current"
+    },
+    {
+      "text": "À propos",
+      "href": "https://www.naiadestattoo.com/apropos",
+      "className": "footer-link"
+    },
+    {
+      "text": "Portfolio",
+      "href": "https://www.naiadestattoo.com/portfolio",
+      "className": "footer-link hide-element"
+    },
+    {
+      "text": "Portfolio Single",
+      "href": "https://rose-marble-portfolio.webflow.io/portfolios/amelia-rodriguez",
+      "className": "footer-link hide-element"
+    },
+    {
+      "text": "Me contacter",
+      "href": "https://www.naiadestattoo.com/contact",
+      "className": "footer-link"
+    },
+    {
+      "text": "FAQ",
+      "href": "https://www.naiadestattoo.com/faq",
+      "className": "footer-link"
+    },
+    {
+      "text": "License",
+      "href": "https://www.naiadestattoo.com/#",
+      "className": "footer-link hide-element"
+    },
+    {
+      "text": "Changelog",
+      "href": "https://www.naiadestattoo.com/#",
+      "className": "footer-link hide-element"
+    },
+    {
+      "text": "404",
+      "href": "https://rose-marble-portfolio.webflow.io/404",
+      "className": "footer-link hide-element"
+    }
+  ]
+}

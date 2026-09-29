@@ -1,0 +1,49 @@
+{
+  "name": "naiadestattoo-astro",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "test": "npm run test:unit && npm run test:e2e",
+    "check": "astro check",
+    "test:unit": "node --test tests/unit/*.test.mjs",
+    "test:e2e": "playwright test",
+    "build:pages": "DEPLOY_TARGET=github-pages PUBLIC_CONTACT_ENDPOINT=https://naiades.irz.fr/api/contact astro build",
+    "editor:build": "PUBLIC_KEYSTATIC_STORAGE=github PUBLIC_KEYSTATIC_GITHUB_REPO=spelcc/naiades PUBLIC_KEYSTATIC_GITHUB_APP_SLUG=spelcc-keystatic astro build --root editor",
+    "editor:deploy": "npm run editor:build && wrangler deploy --config editor/wrangler.jsonc"
+  },
+  "dependencies": {
+    "@astrojs/markdoc": "^2.0.9",
+    "@astrojs/node": "^11.1.6",
+    "@astrojs/react": "^7.0.0",
+    "@keystatic/astro": "^6.0.0",
+    "@keystatic/core": "^0.6.9",
+    "@markdoc/markdoc": "^0.5.10",
+    "astro": "^7.3.5",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "allowScripts": {
+    "esbuild": true,
+    "workerd": true
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/cloudflare": "^14.3.3",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3",
+    "@types/turndown": "^5.0.6",
+    "cheerio": "^1.2.0",
+    "pixelmatch": "^7.2.0",
+    "pngjs": "^7.0.0",
+    "turndown": "^7.2.4",
+    "typescript": "^6.0.3",
+    "wrangler": "^4.143.0"
+  }
+}

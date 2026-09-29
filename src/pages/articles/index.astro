@@ -1,0 +1,35 @@
+---
+import { createReader } from "@keystatic/core/reader";
+import keystaticConfig from "../../../keystatic.config";
+import SourcePageLayout from "../../layouts/SourcePageLayout.astro";
+import { getArticlesSettings, prefixLocalHtml } from "../../lib/source-pages";
+import { renderArticleSkin } from "../../lib/article-skin";
+
+const settings = await getArticlesSettings();
+const reader = createReader(process.cwd(), keystaticConfig);
+const entries = await reader.collections.articles.all();
+const cards = entries
+  .filter(({ entry }) => (entry.routeGroup || "articles") === "articles")
+  .map(({ slug, entry }) => ({
+    title: entry.displayTitle || entry.title,
+    excerpt: entry.excerpt || "",
+    href: `/${entry.routeGroup || "articles"}/${slug}`,
+  }))
+  .sort((a, b) => a.title.localeCompare(b.title, "fr"));
+
+const esc = (value: string) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
+const cardsHtml = `<div class="naiades-article-grid">${cards.map((card) => `
+  <a class="naiades-article-card" href="${card.href}">
+    <h2>${esc(card.title)}</h2>
+    <p>${esc(card.excerpt || "")}</p>
+    <span>Lire l’article →</span>
+  </a>`).join("")}</div>`;
+const skin = await renderArticleSkin({
+  title: settings.title,
+  contentHtml: `<p class="naiades-articles-intro">${esc(settings.intro)}</p>${cardsHtml}`,
+});
+const pageHtml = prefixLocalHtml(skin.html);
+---
+<SourcePageLayout title={`${settings.title} · Naïades Tattoo`} description={settings.intro} manifest={skin.manifest}>
+  <Fragment set:html={pageHtml} />
+</SourcePageLayout>

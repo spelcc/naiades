@@ -1,0 +1,35 @@
+.naiades-articles-intro { margin-bottom: 2.5rem; }
+.naiades-article-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.naiades-article-card {
+  display: flex;
+  min-height: 15rem;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem;
+  border: 1px solid rgba(33, 7, 4, .18);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, .24);
+  color: inherit;
+  text-decoration: none;
+  transition: transform .2s ease, background-color .2s ease;
+}
+.naiades-article-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, .4);
+}
+.naiades-article-card h2,
+.naiades-article-card p { margin: 0; }
+.naiades-article-card span { text-decoration: underline; }
+@media (max-width: 767px) {
+  .naiades-article-grid { grid-template-columns: 1fr; }
+  .naiades-article-card { min-height: 0; padding: 1.4rem; }
+}
+
+/* Keep the source Webflow reCAPTCHA footprint without depending on Google's widget. */
+.w-form-formrecaptcha { min-height: 78px; }
