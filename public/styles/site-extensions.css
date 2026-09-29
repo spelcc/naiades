@@ -200,3 +200,13 @@ a.naiades-article-card {
     align-self: center;
   }
 }
+
+
+/* FAQ spacing */
+.uui-faq02_list > .uui-faq02_accordion + .uui-faq02_accordion {
+  margin-top: 1rem;
+}
+
+.uui-faq02_accordion[data-faq-open="true"] .uui-faq02_answer {
+  padding-bottom: 1.5rem;
+}

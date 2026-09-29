@@ -81,14 +81,15 @@ test("Mail singleton owns every contact mailto subject and body", async () => {
   assert.equal(mail.subject, "Demande de renseignement");
   assert.match(mail.body, /Hello Naïades,/);
 
+  const renderer = await fs.readFile(path.join(root, "src/lib/source-pages.ts"), "utf8");
+  assert.match(renderer, /MAIL_LINK_KEYS_BY_PAGE/);
+
   for (const file of files) {
     const data = JSON.parse(await fs.readFile(path.join(pagesDir, file), "utf8"));
-    const manifest = JSON.parse(await fs.readFile(path.join(manifestsDir, file), "utf8"));
-    for (const [key, value] of Object.entries(data.links || {})) {
-      if (!String(value).startsWith("mailto:naiadestattoo@gmail.com")) continue;
-      assert.equal(value, "mailto:naiadestattoo@gmail.com");
-      assert.equal(key in (manifest.fields.links || {}), false);
-    }
+    const mailLinks = Object.values(data.links || {}).filter((value) =>
+      String(value).startsWith("mailto:naiadestattoo@gmail.com")
+    );
+    assert.equal(mailLinks.length, 0);
   }
 });
 

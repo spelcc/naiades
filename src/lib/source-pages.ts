@@ -30,6 +30,23 @@ export type MailSettings = {
 
 const CONTACT_EMAIL = "naiadestattoo@gmail.com";
 
+const MAIL_LINK_KEYS_BY_PAGE: Record<string, string[]> = {
+  accueil: ["link007", "link019"],
+  apropos: ["link007", "link016"],
+  "articles__arrhes-et-paiement": ["link007", "link015"],
+  "articles__demande-projet": ["link007", "link015"],
+  "articles__deroulement-seance": ["link007", "link015"],
+  "articles__le-sport-apres-un-tatouage": ["link007", "link015"],
+  "articles__les-soins-tatouage-couleur": ["link007", "link016"],
+  "articles__les-soins-tatouage-noir": ["link007", "link015"],
+  "blog__guerir-grace-au-tatouage": ["link007", "link015"],
+  "blog__tatouage-et-consentement": ["link007", "link015"],
+  "blog__tatouage-pas-de-compromis": ["link007", "link015"],
+  contact: ["link007", "link014"],
+  faq: ["link007", "link023"],
+  index: ["link007", "link019"],
+};
+
 export function buildContactMailto(settings: MailSettings) {
   return "mailto:" + CONTACT_EMAIL
     + "?subject=" + encodeURIComponent(settings.subject || "")
@@ -100,6 +117,9 @@ export async function loadSourcePage(id: string) {
   for (const [key, value] of Object.entries(data.links || {})) {
     const renderedValue = value.startsWith("mailto:" + CONTACT_EMAIL) ? contactMailto : value;
     html = html.replaceAll(`__KS_LINK_${key}__`, escAttr(renderedValue));
+  }
+  for (const key of MAIL_LINK_KEYS_BY_PAGE[id] || []) {
+    html = html.replaceAll(`__KS_LINK_${key}__`, escAttr(contactMailto));
   }
   for (const [key, value] of Object.entries(data.form || {})) {
     html = html.replaceAll(`__KS_FORM_${key}__`, escAttr(value));

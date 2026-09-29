@@ -68,9 +68,20 @@ test("FAQ collection renders and accordion opens", async ({ page }) => {
   await page.goto("/faq", { waitUntil: "domcontentloaded" });
   await expect(page.locator(".uui-faq02_accordion")).toHaveCount(12);
   const first = page.locator(".uui-faq02_accordion").first();
+  const second = page.locator(".uui-faq02_accordion").nth(1);
   await expect(first.locator(".uui-faq02_heading")).toHaveText("Comment réserver un flash ?");
+
+  const firstBox = await first.boundingBox();
+  const secondBox = await second.boundingBox();
+  expect(firstBox).not.toBeNull();
+  expect(secondBox).not.toBeNull();
+  expect(secondBox.y - (firstBox.y + firstBox.height)).toBeGreaterThanOrEqual(12);
+
   await first.locator(".uui-faq02_question").click();
-  await expect(first.locator(".uui-faq02_answer")).toHaveCSS("height", /[1-9][0-9]*px|auto/);
+  const answer = first.locator(".uui-faq02_answer");
+  await expect(answer).toHaveCSS("height", /[1-9][0-9]*px|auto/);
+  const openPaddingBottom = parseFloat(await answer.evaluate((el) => getComputedStyle(el).paddingBottom));
+  expect(openPaddingBottom).toBeGreaterThanOrEqual(20);
   await expect(first.locator(".uui-faq02_answer")).toContainText("Contacte-moi via");
   await expect(first.locator('a[href="/contact"]')).toHaveText("ce formulaire");
 });
