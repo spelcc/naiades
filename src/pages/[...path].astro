@@ -5,7 +5,7 @@ import { pageManifests } from "../generated/page-manifests";
 
 export function getStaticPaths() {
   return pageManifests
-    .filter((page) => page.route !== "/" && !page.route.startsWith("/articles/") && !page.route.startsWith("/blog/"))
+    .filter((page) => page.route !== "/" && page.route !== "/faq" && !page.route.startsWith("/articles/") && !page.route.startsWith("/blog/"))
     .map((page) => ({ params: { path: page.route.replace(/^\//, "") } }));
 }
 

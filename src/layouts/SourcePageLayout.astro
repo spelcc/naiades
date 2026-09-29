@@ -55,6 +55,26 @@ const contactEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || withBasePath(
       window.setTimeout(prepareLocalForms, 250);
       window.setTimeout(prepareLocalForms, 1000);
 
+      document.addEventListener("click", (event) => {
+        const target = event.target;
+        if (!(target instanceof Element)) return;
+        const question = target.closest(".uui-faq02_question");
+        if (!question) return;
+        const accordion = question.closest(".uui-faq02_accordion");
+        const answer = accordion?.querySelector(".uui-faq02_answer");
+        if (!(accordion instanceof HTMLElement) || !(answer instanceof HTMLElement)) return;
+
+        const isOpen = accordion.dataset.faqOpen === "true";
+        accordion.dataset.faqOpen = isOpen ? "false" : "true";
+        answer.style.height = isOpen ? "0px" : "auto";
+        accordion.style.backgroundColor = isOpen ? "rgb(255, 255, 255)" : "rgb(244, 235, 226)";
+
+        const vertical = accordion.querySelector(".accordion-icon_vertical-line");
+        if (vertical instanceof HTMLElement) {
+          vertical.style.transform = isOpen ? "" : "rotate(90deg) scaleY(0)";
+        }
+      });
+
       document.addEventListener("submit", async (event) => {
         const form = event.target;
         if (!(form instanceof HTMLFormElement) || !form.closest(".w-form")) return;

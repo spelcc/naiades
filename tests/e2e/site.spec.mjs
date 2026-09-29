@@ -46,10 +46,26 @@ test("Keystatic backend loads", async ({ page }) => {
   expect(response?.status()).toBe(200);
   await expect(page.locator("body")).toContainText("Articles");
   await expect(page.locator("body")).toContainText("10 entries");
+  await expect(page.locator("body")).toContainText("FAQ");
+  await expect(page.locator("body")).toContainText("12 entries");
   await expect(page.locator("body")).not.toContainText("Article ·");
   await expect(page.locator("body")).not.toContainText("Blog ·");
   await page.screenshot({ path: "reference/test-captures/keystatic.png", fullPage: true });
 });
+
+
+
+test("FAQ collection renders and accordion opens", async ({ page }) => {
+  await page.goto("/faq", { waitUntil: "domcontentloaded" });
+  await expect(page.locator(".uui-faq02_accordion")).toHaveCount(12);
+  const first = page.locator(".uui-faq02_accordion").first();
+  await expect(first.locator(".uui-faq02_heading")).toHaveText("Comment réserver un flash ?");
+  await first.locator(".uui-faq02_question").click();
+  await expect(first.locator(".uui-faq02_answer")).toHaveCSS("height", /[1-9][0-9]*px|auto/);
+  await expect(first.locator(".uui-faq02_answer")).toContainText("Contacte-moi via");
+  await expect(first.locator('a[href="/contact"]')).toHaveText("ce formulaire");
+});
+
 
 test("contact form submits to the local backend", async ({ page }) => {
   await page.goto("/contact", { waitUntil: "domcontentloaded" });

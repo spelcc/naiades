@@ -1,0 +1,11 @@
+---
+import SourcePageLayout from "../layouts/SourcePageLayout.astro";
+import { renderFaqPage } from "../lib/faq";
+import { prefixLocalHtml } from "../lib/source-pages";
+
+const page = await renderFaqPage();
+const html = prefixLocalHtml(page.html);
+---
+<SourcePageLayout title={page.data.meta.title} description={page.data.meta.description} manifest={page.manifest}>
+  <Fragment set:html={html} />
+</SourcePageLayout>

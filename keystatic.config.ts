@@ -21,7 +21,7 @@ type Manifest = {
 const manifests = (pageManifests as Manifest[]).slice().sort((a, b) => a.label.localeCompare(b.label, "fr"));
 
 const pageSingletons = Object.fromEntries(manifests
-  .filter((manifest) => !manifest.id.startsWith("articles__") && !manifest.id.startsWith("blog__"))
+  .filter((manifest) => manifest.id !== "faq" && !manifest.id.startsWith("articles__") && !manifest.id.startsWith("blog__"))
   .map((manifest) => {
   const key = `page_${manifest.id.replace(/[^a-zA-Z0-9_]/g, "_")}`;
   const copy = Object.fromEntries(Object.entries(manifest.fields.copy).map(([fieldKey, label]) => [
@@ -85,6 +85,19 @@ export default config({
     ...pageSingletons,
   },
   collections: {
+    faq: collection({
+      label: "FAQ",
+      path: "src/content/faq/*",
+      slugField: "question",
+      format: { data: "json", contentField: "answer" },
+      entryLayout: "content",
+      schema: {
+        question: fields.slug({ name: { label: "Question" } }),
+        section: fields.text({ label: "Section", defaultValue: "Général" }),
+        order: fields.integer({ label: "Ordre", defaultValue: 1 }),
+        answer: fields.markdoc({ label: "Réponse" }),
+      },
+    }),
     articles: collection({
       label: "Articles",
       path: "src/content/articles/*",
