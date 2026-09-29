@@ -33,7 +33,11 @@ for (const file of files) {
       for (const key of Object.keys(data[group] || {})) {
         assert.match(template, new RegExp(`__${prefix}_${key}__`));
       }
-      assert.deepEqual(Object.keys(data[group] || {}).sort(), Object.keys(manifest.fields[group] || {}).sort());
+      const dataKeys = Object.keys(data[group] || {}).filter((key) => {
+        if (group !== "links") return true;
+        return !String(data.links[key] || "").startsWith("mailto:naiadestattoo@gmail.com");
+      }).sort();
+      assert.deepEqual(dataKeys, Object.keys(manifest.fields[group] || {}).sort());
     }
 
     for (const key of Object.keys(data.media || {})) {
@@ -59,5 +63,44 @@ test("legacy articles and blogs are migrated into the Articles collection", asyn
   for (const file of entries) {
     const content = await fs.readFile(path.join(articleDir, file), "utf8");
     assert.doesNotMatch(content, /"routeGroup"/);
+  }
+});
+
+
+test("Mail singleton owns every contact mailto subject and body", async () => {
+  const [config, mailRaw] = await Promise.all([
+    fs.readFile(path.join(root, "keystatic.config.ts"), "utf8"),
+    fs.readFile(path.join(root, "src/content/mail-settings.json"), "utf8"),
+  ]);
+  const mail = JSON.parse(mailRaw);
+
+  assert.match(config, /mailSettings: singleton/);
+  assert.match(config, /label: "Mail"/);
+  assert.match(config, /subject: fields\.text\(\{ label: "Objet" \}\)/);
+  assert.match(config, /body: fields\.text\(\{ label: "Corps du mail", multiline: true \}\)/);
+  assert.equal(mail.subject, "Demande de renseignement");
+  assert.match(mail.body, /Hello Naïades,/);
+
+  for (const file of files) {
+    const data = JSON.parse(await fs.readFile(path.join(pagesDir, file), "utf8"));
+    const manifest = JSON.parse(await fs.readFile(path.join(manifestsDir, file), "utf8"));
+    for (const [key, value] of Object.entries(data.links || {})) {
+      if (!String(value).startsWith("mailto:naiadestattoo@gmail.com")) continue;
+      assert.equal(value, "mailto:naiadestattoo@gmail.com");
+      assert.equal(key in (manifest.fields.links || {}), false);
+    }
+  }
+});
+
+test("homepage workflow CTA links are editable in Keystatic", async () => {
+  for (const id of ["index", "accueil"]) {
+    const [manifest, data] = await Promise.all([
+      fs.readFile(path.join(manifestsDir, id + ".json"), "utf8").then(JSON.parse),
+      fs.readFile(path.join(pagesDir, id + ".json"), "utf8").then(JSON.parse),
+    ]);
+    for (const key of ["link030", "link031", "link032"]) {
+      assert.ok(manifest.fields.links[key]);
+      assert.ok(data.links[key]);
+    }
   }
 });

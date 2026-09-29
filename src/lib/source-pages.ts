@@ -23,6 +23,24 @@ const escText = (value: unknown) => String(value ?? "")
 const escAttr = (value: unknown) => escText(value).replaceAll('"', "&quot;");
 
 
+export type MailSettings = {
+  subject: string;
+  body: string;
+};
+
+const CONTACT_EMAIL = "naiadestattoo@gmail.com";
+
+export function buildContactMailto(settings: MailSettings) {
+  return "mailto:" + CONTACT_EMAIL
+    + "?subject=" + encodeURIComponent(settings.subject || "")
+    + "&body=" + encodeURIComponent(settings.body || "");
+}
+
+export async function getMailSettings(): Promise<MailSettings> {
+  return JSON.parse(await fs.readFile(path.join(root, "src/content/mail-settings.json"), "utf8"));
+}
+
+
 export function withBasePath(value: string) {
   if (!value.startsWith("/") || value.startsWith("//")) return value;
   const configuredBase = import.meta.env.BASE_URL || "/";
@@ -60,10 +78,11 @@ export async function hasSourcePage(id: string) {
 }
 
 export async function loadSourcePage(id: string) {
-  const [template, dataRaw, manifestRaw] = await Promise.all([
+  const [template, dataRaw, manifestRaw, mailSettings] = await Promise.all([
     fs.readFile(path.join(root, "src/templates/pages", `${id}.html`), "utf8"),
     fs.readFile(path.join(root, "src/content/pages", `${id}.json`), "utf8"),
     fs.readFile(path.join(root, "src/content/page-manifests", `${id}.json`), "utf8"),
+    getMailSettings(),
   ]);
   const data = JSON.parse(dataRaw) as PageData;
   const manifest = JSON.parse(manifestRaw) as PageManifest;
@@ -77,8 +96,10 @@ export async function loadSourcePage(id: string) {
     html = html.replaceAll(`__KS_MEDIA_${key}_SRCSET__`, escAttr(value.replacement ? "" : (value.srcset || "")));
     html = html.replaceAll(`__KS_MEDIA_${key}_SIZES__`, escAttr(value.replacement ? "" : (value.sizes || "")));
   }
+  const contactMailto = buildContactMailto(mailSettings);
   for (const [key, value] of Object.entries(data.links || {})) {
-    html = html.replaceAll(`__KS_LINK_${key}__`, escAttr(value));
+    const renderedValue = value.startsWith("mailto:" + CONTACT_EMAIL) ? contactMailto : value;
+    html = html.replaceAll(`__KS_LINK_${key}__`, escAttr(renderedValue));
   }
   for (const [key, value] of Object.entries(data.form || {})) {
     html = html.replaceAll(`__KS_FORM_${key}__`, escAttr(value));

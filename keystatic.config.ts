@@ -72,6 +72,15 @@ export default config({
   storage: githubStorage && githubRepo ? { kind: "github", repo: githubRepo } : { kind: "local" },
   ui: { brand: { name: "Naïades Tattoo" } },
   singletons: {
+    mailSettings: singleton({
+      label: "Mail",
+      path: "src/content/mail-settings",
+      format: { data: "json" },
+      schema: {
+        subject: fields.text({ label: "Objet" }),
+        body: fields.text({ label: "Corps du mail", multiline: true }),
+      },
+    }),
     articlesSettings: singleton({
       label: "Articles · réglages",
       path: "src/content/articles-settings",

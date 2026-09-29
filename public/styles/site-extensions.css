@@ -55,6 +55,13 @@ a.naiades-article-card {
 
 
 /* Stable hamburger / close icon */
+.nav-right-side-links-wrapper {
+  width: auto !important;
+  margin-left: auto;
+  justify-content: flex-end !important;
+  flex: 0 0 auto;
+}
+
 .menu-button {
   width: 45px;
   height: 45px;
@@ -97,6 +104,8 @@ a.naiades-article-card {
 .menu-button.w--open {
   color: #210704 !important;
   background-size: 0 2px;
+  position: relative !important;
+  inset: auto !important;
 }
 
 .menu-button.w--open::before {
@@ -177,4 +186,17 @@ a.naiades-article-card {
 .uui-text-rich-text a {
   color: #fff !important;
   font-weight: inherit;
+}
+
+
+/* Workflow step CTAs */
+.workflow-more-link {
+  align-self: flex-start;
+  margin-top: .5rem;
+}
+
+@media (max-width: 991px) {
+  .workflow-more-link {
+    align-self: center;
+  }
 }

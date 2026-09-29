@@ -150,7 +150,6 @@
       "link004": "__KS_COPY_t004__ → /apropos",
       "link005": "__KS_COPY_t005__ → /faq",
       "link006": "__KS_COPY_t006__ → /contact",
-      "link007": "__KS_COPY_t007__ → mailto:naiadestattoo@gmail.com",
       "link008": "__KS_COPY_t008__ → tel:+33981868220",
       "link009": "social-link w-inline-block → https://www.instagram.com/naiadestattoo/",
       "link010": "__KS_COPY_t011__ → /contact",
@@ -162,7 +161,6 @@
       "link016": "__KS_COPY_t060__ → https://www.instagram.com/",
       "link017": "__KS_COPY_t062__ → https://maps.app.goo.gl/qSRW5Kk9gbhzwJPj7",
       "link018": "__KS_COPY_t063__ → https://www.instagram.com/naiadestattoo",
-      "link019": "__KS_COPY_t064__ → mailto:naiadestattoo@gmail.com?subject=Demande%20de%20renseignement",
       "link020": "__KS_COPY_t065__ → tel:1800.456.568",
       "link021": "__KS_COPY_t066__ → /",
       "link022": "__KS_COPY_t067__ → /apropos",
@@ -172,7 +170,10 @@
       "link026": "__KS_COPY_t071__ → /faq",
       "link027": "__KS_COPY_t072__ → #",
       "link028": "__KS_COPY_t073__ → #",
-      "link029": "__KS_COPY_t074__ → https://rose-marble-portfolio.webflow.io/404"
+      "link029": "__KS_COPY_t074__ → https://rose-marble-portfolio.webflow.io/404",
+      "link030": "Étape 1 · Plus d’infos → /articles/demande-projet",
+      "link031": "Étape 2 · Plus d’infos → /articles/demande-projet#le-travail-du-dessin",
+      "link032": "Étape 3 · Plus d’infos → /articles/deroulement-seance"
     },
     "form": {}
   }

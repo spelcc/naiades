@@ -413,7 +413,7 @@
     "link016": "https://www.instagram.com/",
     "link017": "https://maps.app.goo.gl/qSRW5Kk9gbhzwJPj7",
     "link018": "https://www.instagram.com/naiadestattoo",
-    "link019": "mailto:naiadestattoo@gmail.com?subject=Demande%20de%20renseignement&body=Hello%20Na%C3%AFades%2C%0A%0A-%20Description%20de%20ton%20projet%20%28histoire%2C%20symbolique%2C%20etc.%20tout%20ce%20que%20tu%20as%20envie%20de%20me%20partager%29%0A-%20La%20taille%20approximative%20et%20l%E2%80%99emplacement%20%28avec%20une%20photo%20si%20tu%20peux%29%0A-%20Ton%20budget%0A%0AToute%20autre%20information%20qui%20te%20semble%20importante%20%3A%29",
+    "link019": "mailto:naiadestattoo@gmail.com",
     "link020": "tel:1800.456.568",
     "link021": "/",
     "link022": "/apropos",
@@ -423,7 +423,10 @@
     "link026": "/faq",
     "link027": "#",
     "link028": "#",
-    "link029": "https://rose-marble-portfolio.webflow.io/404"
+    "link029": "https://rose-marble-portfolio.webflow.io/404",
+    "link030": "/articles/demande-projet",
+    "link031": "/articles/demande-projet#le-travail-du-dessin",
+    "link032": "/articles/deroulement-seance"
   },
   "form": {}
 }

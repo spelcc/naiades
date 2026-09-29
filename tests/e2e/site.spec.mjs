@@ -98,12 +98,21 @@ test("contact page uses a prefilled email CTA and no form image", async ({ page 
   const footerMail = page.locator('footer a[href^="mailto:naiadestattoo@gmail.com"]').first();
   const footerHref = await footerMail.getAttribute("href");
   expect(decodeURIComponent(footerHref || "")).toContain("Hello Naïades,");
+
+  const allMailtos = await page.locator('a[href^="mailto:naiadestattoo@gmail.com"]').evaluateAll(
+    (links) => links.map((link) => link.getAttribute("href")),
+  );
+  expect(new Set(allMailtos).size).toBe(1);
+  expect(allMailtos[0]).toBe(href);
 });
 
 
 test("hamburger becomes a visible close icon while menu is open", async ({ page }) => {
   for (const viewport of [
     { width: 390, height: 844 },
+    { width: 768, height: 900 },
+    { width: 820, height: 900 },
+    { width: 991, height: 900 },
     { width: 1440, height: 900 },
   ]) {
     await page.setViewportSize(viewport);
@@ -112,6 +121,12 @@ test("hamburger becomes a visible close icon while menu is open", async ({ page 
     const button = page.locator(".menu-button").first();
     await expect(button).toBeVisible();
     await expect(button).not.toHaveClass(/w--open/);
+
+    const closedBox = await button.boundingBox();
+    const navBox = await page.locator(".nav-wrapper").first().boundingBox();
+    expect(closedBox).not.toBeNull();
+    expect(navBox).not.toBeNull();
+    expect(Math.abs((closedBox.x + closedBox.width) - (navBox.x + navBox.width))).toBeLessThanOrEqual(1);
 
     const closed = await button.evaluate((el) => {
       const style = getComputedStyle(el);
@@ -133,6 +148,11 @@ test("hamburger becomes a visible close icon while menu is open", async ({ page 
     await button.click();
     await expect(button).toHaveClass(/w--open/);
     await expect(page.locator(".nav-menu")).toBeVisible();
+
+    const openBox = await button.boundingBox();
+    expect(openBox).not.toBeNull();
+    expect(Math.abs(openBox.x - closedBox.x)).toBeLessThanOrEqual(1);
+    expect(Math.abs(openBox.y - closedBox.y)).toBeLessThanOrEqual(1);
 
     const open = await button.evaluate((el) => {
       const style = getComputedStyle(el);
@@ -167,4 +187,17 @@ test("Studio Pixel link uses body text styling", async ({ page }) => {
   await expect(link).toHaveCSS("color", "rgb(255, 255, 255)");
   await expect(link).toHaveCSS("font-weight", "400");
   await expect(link.locator("xpath=..")).toContainText("Studio Pixel, un studio de tatouage privé et inclusif.");
+});
+
+
+test("workflow steps expose three editable article CTAs", async ({ page }) => {
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+  const ctas = page.locator(".workflow-more-link");
+  await expect(ctas).toHaveCount(3);
+  await expect(ctas.nth(0)).toHaveAttribute("href", "/articles/demande-projet");
+  await expect(ctas.nth(1)).toHaveAttribute("href", "/articles/demande-projet#le-travail-du-dessin");
+  await expect(ctas.nth(2)).toHaveAttribute("href", "/articles/deroulement-seance");
+
+  await page.goto("/articles/demande-projet#le-travail-du-dessin", { waitUntil: "domcontentloaded" });
+  await expect(page.locator("#le-travail-du-dessin")).toContainText("Le travail du dessin");
 });
