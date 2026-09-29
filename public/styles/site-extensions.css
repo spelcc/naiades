@@ -204,12 +204,46 @@ a.naiades-article-card {
   }
 }
 
-
-/* FAQ spacing */
+/* FAQ spacing and accordion motion */
 .uui-faq02_list > .uui-faq02_accordion + .uui-faq02_accordion {
   margin-top: 1rem;
 }
 
+.uui-faq02_question {
+  gap: 1.5rem;
+}
+
+.uui-faq02_heading {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.uui-faq02_icon-wrapper {
+  flex: 0 0 auto;
+}
+
+.uui-faq02_accordion {
+  transition: background-color 180ms ease;
+}
+
+.uui-faq02_answer {
+  height: 0;
+  transition: height 220ms ease, padding-bottom 220ms ease;
+  will-change: height;
+}
+
 .uui-faq02_accordion[data-faq-open="true"] .uui-faq02_answer {
   padding-bottom: 1.5rem;
+}
+
+.accordion-icon_vertical-line {
+  transition: transform 180ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uui-faq02_accordion,
+  .uui-faq02_answer,
+  .accordion-icon_vertical-line {
+    transition: none;
+  }
 }

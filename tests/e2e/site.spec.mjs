@@ -88,13 +88,22 @@ test("FAQ collection renders and accordion opens", async ({ page }) => {
   expect(secondBox).not.toBeNull();
   expect(secondBox.y - (firstBox.y + firstBox.height)).toBeGreaterThanOrEqual(12);
 
+  const questionGap = parseFloat(await first.locator(".uui-faq02_question").evaluate((el) => getComputedStyle(el).gap));
+  expect(questionGap).toBeGreaterThanOrEqual(16);
+
   await first.locator(".uui-faq02_question").click();
   const answer = first.locator(".uui-faq02_answer");
-  await expect(answer).toHaveCSS("height", /[1-9][0-9]*px|auto/);
-  const openPaddingBottom = parseFloat(await answer.evaluate((el) => getComputedStyle(el).paddingBottom));
-  expect(openPaddingBottom).toBeGreaterThanOrEqual(20);
-  await expect(first.locator(".uui-faq02_answer")).toContainText("Contacte-moi via");
+  await expect(first).toHaveAttribute("data-faq-open", "true");
+  await expect(first.locator(".uui-faq02_question")).toHaveAttribute("aria-expanded", "true");
+  await expect(answer).not.toHaveCSS("height", "0px");
+  await expect(answer).toHaveCSS("padding-bottom", "24px");
+  await expect(answer).toContainText("Contacte-moi via");
   await expect(first.locator('a[href="/contact"]')).toHaveText("ce formulaire");
+
+  await second.locator(".uui-faq02_question").click();
+  await expect(second).toHaveAttribute("data-faq-open", "true");
+  await expect(first).toHaveAttribute("data-faq-open", "false");
+  await expect(first.locator(".uui-faq02_answer")).toHaveCSS("height", "0px");
 });
 
 test("contact page uses a prefilled email CTA and no form image", async ({ page }) => {

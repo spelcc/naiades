@@ -65,24 +65,74 @@ const contactEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || withBasePath(
       updateCopyrightYear();
       document.addEventListener("DOMContentLoaded", updateCopyrightYear, { once: true });
 
+      const setFaqState = (accordion, open) => {
+        if (!(accordion instanceof HTMLElement)) return;
+        const answer = accordion.querySelector(".uui-faq02_answer");
+        const question = accordion.querySelector(".uui-faq02_question");
+        const vertical = accordion.querySelector(".accordion-icon_vertical-line");
+        if (!(answer instanceof HTMLElement)) return;
+
+        const wasOpen = accordion.dataset.faqOpen === "true";
+        if (wasOpen === open) return;
+
+        if (!open) {
+          answer.style.height = answer.scrollHeight + "px";
+          answer.getBoundingClientRect();
+        }
+
+        accordion.dataset.faqOpen = open ? "true" : "false";
+        accordion.style.backgroundColor = open ? "rgb(244, 235, 226)" : "rgb(255, 255, 255)";
+        question?.setAttribute("aria-expanded", open ? "true" : "false");
+
+        if (vertical instanceof HTMLElement) {
+          vertical.style.transform = open ? "rotate(90deg) scaleY(0)" : "";
+        }
+
+        if (open) {
+          answer.style.height = "0px";
+          requestAnimationFrame(() => {
+            answer.style.height = answer.scrollHeight + "px";
+          });
+        } else {
+          requestAnimationFrame(() => {
+            answer.style.height = "0px";
+          });
+        }
+      };
+
+      document.querySelectorAll(".uui-faq02_accordion").forEach((accordion) => {
+        if (!(accordion instanceof HTMLElement)) return;
+        accordion.dataset.faqOpen = "false";
+        accordion.querySelector(".uui-faq02_question")?.setAttribute("aria-expanded", "false");
+        const answer = accordion.querySelector(".uui-faq02_answer");
+        if (answer instanceof HTMLElement) answer.style.height = "0px";
+      });
+
+      document.addEventListener("transitionend", (event) => {
+        const answer = event.target;
+        if (!(answer instanceof HTMLElement) || !answer.classList.contains("uui-faq02_answer")) return;
+        if (event.propertyName !== "height") return;
+        const accordion = answer.closest(".uui-faq02_accordion");
+        if (accordion instanceof HTMLElement && accordion.dataset.faqOpen === "true") {
+          answer.style.height = "auto";
+        }
+      });
+
       document.addEventListener("click", (event) => {
         const target = event.target;
         if (!(target instanceof Element)) return;
         const question = target.closest(".uui-faq02_question");
         if (!question) return;
         const accordion = question.closest(".uui-faq02_accordion");
-        const answer = accordion?.querySelector(".uui-faq02_answer");
-        if (!(accordion instanceof HTMLElement) || !(answer instanceof HTMLElement)) return;
+        if (!(accordion instanceof HTMLElement)) return;
 
-        const isOpen = accordion.dataset.faqOpen === "true";
-        accordion.dataset.faqOpen = isOpen ? "false" : "true";
-        answer.style.height = isOpen ? "0px" : "auto";
-        accordion.style.backgroundColor = isOpen ? "rgb(255, 255, 255)" : "rgb(244, 235, 226)";
-
-        const vertical = accordion.querySelector(".accordion-icon_vertical-line");
-        if (vertical instanceof HTMLElement) {
-          vertical.style.transform = isOpen ? "" : "rotate(90deg) scaleY(0)";
+        const shouldOpen = accordion.dataset.faqOpen !== "true";
+        if (shouldOpen) {
+          document.querySelectorAll(".uui-faq02_accordion[data-faq-open='true']").forEach((other) => {
+            if (other !== accordion) setFaqState(other, false);
+          });
         }
+        setFaqState(accordion, shouldOpen);
       });
 
       document.addEventListener("submit", async (event) => {
