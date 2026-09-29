@@ -55,7 +55,7 @@
   width: 45px;
   height: 45px;
   color: #210704;
-  background-image: linear-gradient(currentColor, currentColor);
+  background-image: linear-gradient(#210704, #210704);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 24px 2px;
@@ -75,7 +75,7 @@
   top: 50%;
   width: 24px;
   height: 2px;
-  background: currentColor;
+  background: #210704 !important;
   transform-origin: center;
   transition: transform 180ms ease, margin 180ms ease;
 }
@@ -91,6 +91,7 @@
 }
 
 .menu-button.w--open {
+  color: #210704 !important;
   background-size: 0 2px;
 }
 
