@@ -29,7 +29,10 @@ a.naiades-article-card {
 }
 .naiades-article-card h2,
 .naiades-article-card p { margin: 0; }
-.naiades-article-card span { text-decoration: underline; }
+.naiades-article-card span {
+  color: #086968 !important;
+  text-decoration: underline;
+}
 @media (max-width: 767px) {
   .naiades-article-grid { grid-template-columns: 1fr; }
   .naiades-article-card { min-height: 0; padding: 1.4rem; }

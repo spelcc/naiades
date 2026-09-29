@@ -55,6 +55,7 @@ test("Articles list uses the existing visual language", async ({ page }) => {
   const sportCard = page.locator(".naiades-article-card").filter({ hasText: "Je conseille toujours de ne pas faire de sport" }).first();
   await expect(sportCard).toHaveCSS("text-decoration-line", "none");
   await expect(sportCard.locator("p")).toHaveCSS("text-decoration-line", "none");
+  await expect(sportCard.locator("span")).toHaveCSS("color", "rgb(8, 105, 104)");
   await expect(sportCard.locator("span")).toHaveCSS("text-decoration-line", "underline");
 
   await page.screenshot({ path: "reference/test-captures/articles-list.png", fullPage: true });
