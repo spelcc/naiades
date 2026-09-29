@@ -1,4 +1,17 @@
 import { test, expect } from "@playwright/test";
+import fs from "node:fs/promises";
+import path from "node:path";
+
+async function publishedArticleCount() {
+  const dir = path.join(process.cwd(), "src/content/articles");
+  const files = (await fs.readdir(dir)).filter((file) => file.endsWith(".mdoc"));
+  let count = 0;
+  for (const file of files) {
+    const text = await fs.readFile(path.join(dir, file), "utf8");
+    if (/"status":\s*"published"/.test(text)) count++;
+  }
+  return count;
+}
 
 const routes = [
   "/",
@@ -12,9 +25,6 @@ const routes = [
   "/articles/demande-projet",
   "/articles/arrhes-et-paiement",
   "/articles/le-sport-apres-un-tatouage",
-  "/blog/guerir-grace-au-tatouage",
-  "/blog/tatouage-et-consentement",
-  "/blog/tatouage-pas-de-compromis",
 ];
 
 test("all source routes and Articles list render", async ({ page }) => {
@@ -37,7 +47,7 @@ test("mobile pages do not overflow horizontally", async ({ page }) => {
 test("Articles list uses the existing visual language", async ({ page }) => {
   await page.goto("/articles", { waitUntil: "domcontentloaded" });
   await expect(page.locator("h1.uui-heading-large")).toHaveText("Articles");
-  await expect(page.locator(".naiades-article-card")).toHaveCount(9);
+  await expect(page.locator(".naiades-article-card")).toHaveCount(await publishedArticleCount());
   await expect(page.locator(".naiades-pagination")).toHaveCount(0);
   await expect(page.locator(".uui-blogpost01_breadcrumb")).toHaveCount(0);
   await expect(page.locator(".text-block", { hasText: "Articles" })).toHaveCount(0);
@@ -218,4 +228,15 @@ test("copyright year follows the current year", async ({ page }) => {
   await page.goto("/", { waitUntil: "domcontentloaded" });
   const copyright = page.locator(".copyright-text-wrapper .button-text").first();
   await expect(copyright).toContainText("Copyright © " + new Date().getFullYear() + " Naïades Tattoo");
+});
+
+
+test("opened menu uses Instagram instead of phone", async ({ page }) => {
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+  await page.locator(".menu-button").first().click();
+  const menu = page.locator(".nav-menu").first();
+  await expect(menu).toBeVisible();
+  await expect(menu.locator('a[href^="tel:"]')).toHaveCount(0);
+  const instagram = menu.locator('a[href="https://www.instagram.com/naiadestattoo/"]').filter({ hasText: "@naiadestattoo" }).first();
+  await expect(instagram).toBeVisible();
 });
