@@ -39,6 +39,12 @@ test("Articles list uses the existing visual language", async ({ page }) => {
   await expect(page.locator("h1.uui-heading-large")).toHaveText("Articles");
   await expect(page.locator(".naiades-article-card")).toHaveCount(6);
   await expect(page.locator(".naiades-pagination")).toHaveCount(0);
+
+  const sportCard = page.locator(".naiades-article-card").filter({ hasText: "Je conseille toujours de ne pas faire de sport" }).first();
+  await expect(sportCard).toHaveCSS("text-decoration-line", "none");
+  await expect(sportCard.locator("p")).toHaveCSS("text-decoration-line", "none");
+  await expect(sportCard.locator("span")).toHaveCSS("text-decoration-line", "underline");
+
   await page.screenshot({ path: "reference/test-captures/articles-list.png", fullPage: true });
 });
 

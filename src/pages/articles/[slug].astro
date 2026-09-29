@@ -4,6 +4,7 @@ import { createReader } from "@keystatic/core/reader";
 import keystaticConfig from "../../../keystatic.config";
 import SourcePageLayout from "../../layouts/SourcePageLayout.astro";
 import { renderArticleSkin } from "../../lib/article-skin";
+import { isPublishedArticle } from "../../lib/article-visibility";
 import { prefixLocalHtml } from "../../lib/source-pages";
 
 
@@ -11,14 +12,14 @@ export async function getStaticPaths() {
   const reader = createReader(process.cwd(), keystaticConfig);
   const entries = await reader.collections.articles.all();
   return entries
-    .filter(({ entry }) => (entry.routeGroup || "articles") === "articles")
+    .filter(({ entry }) => isPublishedArticle(entry) && (entry.routeGroup || "articles") === "articles")
     .map(({ slug }) => ({ params: { slug } }));
 }
 
 const slug = Astro.params.slug || "";
 const reader = createReader(process.cwd(), keystaticConfig);
 const article = await reader.collections.articles.read(slug);
-if (!article || article.routeGroup === "blog") return Astro.redirect("/404", 302);
+if (!article || !isPublishedArticle(article) || article.routeGroup === "blog") return Astro.redirect("/404", 302);
 
 const { node } = await article.content();
 const contentHtml = Markdoc.renderers.html(Markdoc.transform(node as any));

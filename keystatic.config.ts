@@ -107,6 +107,15 @@ export default config({
       schema: {
         title: fields.slug({ name: { label: "Titre" } }),
         displayTitle: fields.text({ label: "Titre affiché" }),
+        status: fields.select({
+          label: "Statut",
+          options: [
+            { label: "Brouillon", value: "draft" },
+            { label: "Publié", value: "published" },
+          ],
+          defaultValue: "draft",
+          description: "Un brouillon n’est ni listé ni accessible sur le site public.",
+        }),
         publishedAt: fields.date({
           label: "Date de publication",
           defaultValue: { kind: "today" },

@@ -1,6 +1,7 @@
 import { createReader } from "@keystatic/core/reader";
 import keystaticConfig from "../../keystatic.config";
 import { renderArticleSkin } from "./article-skin";
+import { isPublishedArticle } from "./article-visibility";
 import { getArticlesSettings, prefixLocalHtml } from "./source-pages";
 import {
   ARTICLES_PER_PAGE,
@@ -21,7 +22,7 @@ export async function getArticleListItems() {
   const reader = createReader(process.cwd(), keystaticConfig);
   const entries = await reader.collections.articles.all();
   const cards: ArticleListItem[] = entries
-    .filter(({ entry }) => (entry.routeGroup || "articles") === "articles")
+    .filter(({ entry }) => isPublishedArticle(entry) && (entry.routeGroup || "articles") === "articles")
     .map(({ slug, entry }) => ({
       title: entry.displayTitle || entry.title,
       excerpt: entry.excerpt || "",

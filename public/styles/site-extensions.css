@@ -5,6 +5,10 @@
   gap: 1.5rem;
   margin-top: 2rem;
 }
+a.naiades-article-card {
+  text-decoration: none !important;
+}
+
 .naiades-article-card {
   display: flex;
   min-height: 15rem;
