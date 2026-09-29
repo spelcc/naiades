@@ -107,6 +107,11 @@ export default config({
       schema: {
         title: fields.slug({ name: { label: "Titre" } }),
         displayTitle: fields.text({ label: "Titre affiché" }),
+        publishedAt: fields.date({
+          label: "Date de publication",
+          defaultValue: { kind: "today" },
+          description: "Utilisée pour classer les articles du plus récent au plus ancien.",
+        }),
         routeGroup: fields.select({
           label: "Type de route",
           options: [

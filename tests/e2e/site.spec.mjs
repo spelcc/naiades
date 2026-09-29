@@ -38,6 +38,7 @@ test("Articles list uses the existing visual language", async ({ page }) => {
   await page.goto("/articles", { waitUntil: "domcontentloaded" });
   await expect(page.locator("h1.uui-heading-large")).toHaveText("Articles");
   await expect(page.locator(".naiades-article-card")).toHaveCount(6);
+  await expect(page.locator(".naiades-pagination")).toHaveCount(0);
   await page.screenshot({ path: "reference/test-captures/articles-list.png", fullPage: true });
 });
 
