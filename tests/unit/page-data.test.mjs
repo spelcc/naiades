@@ -54,4 +54,10 @@ test("legacy articles and blogs are migrated into the Articles collection", asyn
   assert.match(config, /path: "src\/content\/articles\/\*"/);
   assert.match(config, /!manifest\.id\.startsWith\("articles__"\)/);
   assert.match(config, /!manifest\.id\.startsWith\("blog__"\)/);
+  assert.doesNotMatch(config, /routeGroup/);
+
+  for (const file of entries) {
+    const content = await fs.readFile(path.join(articleDir, file), "utf8");
+    assert.doesNotMatch(content, /"routeGroup"/);
+  }
 });

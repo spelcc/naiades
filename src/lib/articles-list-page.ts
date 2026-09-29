@@ -22,11 +22,11 @@ export async function getArticleListItems() {
   const reader = createReader(process.cwd(), keystaticConfig);
   const entries = await reader.collections.articles.all();
   const cards: ArticleListItem[] = entries
-    .filter(({ entry }) => isPublishedArticle(entry) && (entry.routeGroup || "articles") === "articles")
+    .filter(({ entry }) => isPublishedArticle(entry))
     .map(({ slug, entry }) => ({
       title: entry.displayTitle || entry.title,
       excerpt: entry.excerpt || "",
-      href: "/" + (entry.routeGroup || "articles") + "/" + slug,
+      href: "/articles/" + slug,
       publishedAt: entry.publishedAt || null,
     }));
 

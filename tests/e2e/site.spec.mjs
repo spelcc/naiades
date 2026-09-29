@@ -37,7 +37,7 @@ test("mobile pages do not overflow horizontally", async ({ page }) => {
 test("Articles list uses the existing visual language", async ({ page }) => {
   await page.goto("/articles", { waitUntil: "domcontentloaded" });
   await expect(page.locator("h1.uui-heading-large")).toHaveText("Articles");
-  await expect(page.locator(".naiades-article-card")).toHaveCount(6);
+  await expect(page.locator(".naiades-article-card")).toHaveCount(9);
   await expect(page.locator(".naiades-pagination")).toHaveCount(0);
 
   const sportCard = page.locator(".naiades-article-card").filter({ hasText: "Je conseille toujours de ne pas faire de sport" }).first();

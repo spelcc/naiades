@@ -121,14 +121,6 @@ export default config({
           defaultValue: { kind: "today" },
           description: "Utilisée pour classer les articles du plus récent au plus ancien.",
         }),
-        routeGroup: fields.select({
-          label: "Type de route",
-          options: [
-            { label: "Article", value: "articles" },
-            { label: "Ancienne route blog", value: "blog" },
-          ],
-          defaultValue: "articles",
-        }),
         seoTitle: fields.text({ label: "Titre SEO" }),
         seoDescription: fields.text({ label: "Meta description", multiline: true }),
         excerpt: fields.text({ label: "Résumé", multiline: true }),
