@@ -201,3 +201,10 @@ test("workflow steps expose three editable article CTAs", async ({ page }) => {
   await page.goto("/articles/demande-projet#le-travail-du-dessin", { waitUntil: "domcontentloaded" });
   await expect(page.locator("#le-travail-du-dessin")).toContainText("Le travail du dessin");
 });
+
+
+test("copyright year follows the current year", async ({ page }) => {
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+  const copyright = page.locator(".copyright-text-wrapper .button-text").first();
+  await expect(copyright).toContainText("Copyright © " + new Date().getFullYear() + " Naïades Tattoo");
+});
