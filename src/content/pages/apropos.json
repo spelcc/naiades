@@ -71,7 +71,10 @@
     "t065": "License",
     "t066": "Changelog",
     "t067": "404",
-    "t068": "Copyright © 2024 Naïades Tattoo. All rights reserved."
+    "t068": "Copyright © 2024 Naïades Tattoo. All rights reserved.",
+    "t069": "Je travaille également ponctuellement à Grenoble au",
+    "t070": "Studio Pixel",
+    "t071": ", un studio de tatouage privé et inclusif"
   },
   "media": {
     "img001": {
@@ -239,7 +242,8 @@
     "link023": "/faq",
     "link024": "#",
     "link025": "#",
-    "link026": "https://rose-marble-portfolio.webflow.io/404"
+    "link026": "https://rose-marble-portfolio.webflow.io/404",
+    "link027": "https://lestudiopixel.com/"
   },
   "form": {}
 }
