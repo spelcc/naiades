@@ -55,6 +55,16 @@ const contactEndpoint = import.meta.env.PUBLIC_CONTACT_ENDPOINT || withBasePath(
       window.setTimeout(prepareLocalForms, 250);
       window.setTimeout(prepareLocalForms, 1000);
 
+      const updateCopyrightYear = () => {
+        const year = String(new Date().getFullYear());
+        document.querySelectorAll(".copyright-text-wrapper .button-text").forEach((element) => {
+          if (!(element instanceof HTMLElement)) return;
+          element.textContent = (element.textContent || "").replace(/(©\s*)\d{4}/, "$1" + year);
+        });
+      };
+      updateCopyrightYear();
+      document.addEventListener("DOMContentLoaded", updateCopyrightYear, { once: true });
+
       document.addEventListener("click", (event) => {
         const target = event.target;
         if (!(target instanceof Element)) return;
