@@ -91,12 +91,17 @@ test("FAQ collection renders and accordion opens", async ({ page }) => {
   const questionGap = parseFloat(await first.locator(".uui-faq02_question").evaluate((el) => getComputedStyle(el).gap));
   expect(questionGap).toBeGreaterThanOrEqual(16);
 
+  const answerContent = first.locator(".uui-faq02_answer > .uui-max-width-large-2");
+  await expect(answerContent).toHaveCSS("opacity", "0");
+
   await first.locator(".uui-faq02_question").click();
   const answer = first.locator(".uui-faq02_answer");
   await expect(first).toHaveAttribute("data-faq-open", "true");
   await expect(first.locator(".uui-faq02_question")).toHaveAttribute("aria-expanded", "true");
   await expect(answer).not.toHaveCSS("height", "0px");
   await expect(answer).toHaveCSS("padding-bottom", "24px");
+  await expect(answerContent).toHaveCSS("opacity", "1");
+  await expect(answerContent).toHaveCSS("transform", "matrix(1, 0, 0, 1, 0, 0)");
   await expect(answer).toContainText("Contacte-moi via");
   await expect(first.locator('a[href="/contact"]')).toHaveText("ce formulaire");
 
@@ -104,6 +109,7 @@ test("FAQ collection renders and accordion opens", async ({ page }) => {
   await expect(second).toHaveAttribute("data-faq-open", "true");
   await expect(first).toHaveAttribute("data-faq-open", "false");
   await expect(first.locator(".uui-faq02_answer")).toHaveCSS("height", "0px");
+  await expect(answerContent).toHaveCSS("opacity", "0");
 });
 
 test("contact page uses a prefilled email CTA and no form image", async ({ page }) => {
@@ -242,6 +248,7 @@ test("copyright year follows the current year", async ({ page }) => {
 
 
 test("opened menu uses Instagram instead of phone", async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 568 });
   await page.goto("/", { waitUntil: "domcontentloaded" });
   await page.locator(".menu-button").first().click();
   const menu = page.locator(".nav-menu").first();
@@ -249,4 +256,10 @@ test("opened menu uses Instagram instead of phone", async ({ page }) => {
   await expect(menu.locator('a[href^="tel:"]')).toHaveCount(0);
   const instagram = menu.locator('a[href="https://www.instagram.com/naiadestattoo/"]').filter({ hasText: "@naiadestattoo" }).first();
   await expect(instagram).toBeVisible();
+  await expect(instagram.locator(".nav-instagram-icon")).toHaveCount(1);
+
+  await page.waitForTimeout(850);
+  const instagramBox = await instagram.boundingBox();
+  expect(instagramBox).not.toBeNull();
+  expect(instagramBox.y + instagramBox.height).toBeLessThanOrEqual(568);
 });

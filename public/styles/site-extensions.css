@@ -236,6 +236,18 @@ a.naiades-article-card {
   padding-bottom: 1.5rem;
 }
 
+.uui-faq02_answer > .uui-max-width-large-2 {
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 160ms ease, transform 180ms ease;
+}
+
+.uui-faq02_accordion[data-faq-open="true"] .uui-faq02_answer > .uui-max-width-large-2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 45ms;
+}
+
 .accordion-icon_vertical-line {
   transition: transform 180ms ease;
 }
@@ -243,7 +255,52 @@ a.naiades-article-card {
 @media (prefers-reduced-motion: reduce) {
   .uui-faq02_accordion,
   .uui-faq02_answer,
+  .uui-faq02_answer > .uui-max-width-large-2,
   .accordion-icon_vertical-line {
     transition: none;
+  }
+}
+
+
+/* Keep open-menu contact links inside short mobile viewports. */
+@media (max-width: 767px) and (max-height: 760px) {
+  .nav-menu {
+    height: 100svh;
+    max-height: 100svh;
+    overflow-y: auto;
+  }
+
+  .nav-elements-wrapper {
+    height: auto;
+    min-height: 100svh;
+    align-items: stretch;
+  }
+
+  .nav-links-container {
+    min-height: 100svh;
+    height: auto;
+    justify-content: flex-start;
+    gap: 1.25rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .nav-logo-wrapper,
+  .nav-links-wrapper,
+  .nav-footer-links-wrapper {
+    flex: 0 0 auto;
+  }
+
+  .nav-links-wrapper {
+    gap: 0;
+  }
+
+  .nav-link {
+    font-size: 44px;
+    line-height: 50px;
+  }
+
+  .nav-footer-links-wrapper {
+    margin-top: auto;
   }
 }
