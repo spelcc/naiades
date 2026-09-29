@@ -37,7 +37,7 @@ test("mobile pages do not overflow horizontally", async ({ page }) => {
 test("Articles list uses the existing visual language", async ({ page }) => {
   await page.goto("/articles", { waitUntil: "domcontentloaded" });
   await expect(page.locator("h1.uui-heading-large")).toHaveText("Articles");
-  await expect(page.locator(".naiades-article-card")).toHaveCount(7);
+  await expect(page.locator(".naiades-article-card")).toHaveCount(6);
   await page.screenshot({ path: "reference/test-captures/articles-list.png", fullPage: true });
 });
 
@@ -45,7 +45,7 @@ test("Keystatic backend loads", async ({ page }) => {
   const response = await page.goto("http://127.0.0.1:4322/keystatic", { waitUntil: "domcontentloaded" });
   expect(response?.status()).toBe(200);
   await expect(page.locator("body")).toContainText("Articles");
-  await expect(page.locator("body")).toContainText("10 entries");
+  await expect(page.locator("body")).toContainText("9 entries");
   await expect(page.locator("body")).toContainText("FAQ");
   await expect(page.locator("body")).toContainText("12 entries");
   await expect(page.locator("body")).not.toContainText("Article ·");
@@ -66,13 +66,25 @@ test("FAQ collection renders and accordion opens", async ({ page }) => {
   await expect(first.locator('a[href="/contact"]')).toHaveText("ce formulaire");
 });
 
-
-test("contact form submits to the local backend", async ({ page }) => {
+test("contact page uses a prefilled email CTA and no form image", async ({ page }) => {
   await page.goto("/contact", { waitUntil: "domcontentloaded" });
-  await page.locator("#first-name").fill("Test browserless");
-  await page.locator("#email").fill("browserless@example.invalid");
-  await page.locator("#field-2").fill("Message de test automatisé.");
-  await page.locator('input[type="submit"]').click();
-  await expect(page.locator(".w-form-done")).toBeVisible();
-  await page.screenshot({ path: "reference/test-captures/contact-success.png", fullPage: true });
+
+  await expect(page.locator(".contact-image-wrapper")).toHaveCount(0);
+  await expect(page.locator("#wf-form-Contact-Form")).toHaveCount(0);
+
+  const cta = page.locator(".naiades-contact-mail-row a").first();
+  await expect(cta).toHaveText("Me contacter");
+
+  const href = await cta.getAttribute("href");
+  expect(href).toBeTruthy();
+  expect(href).toContain("mailto:naiadestattoo@gmail.com?");
+  const decoded = decodeURIComponent(href);
+  expect(decoded).toContain("Hello Naïades,");
+  expect(decoded).toContain("Mémo des informations :");
+  expect(decoded).toContain("- Ton budget max");
+  expect(decoded).toContain("mood board");
+
+  const footerMail = page.locator('footer a[href^="mailto:naiadestattoo@gmail.com"]').first();
+  const footerHref = await footerMail.getAttribute("href");
+  expect(decodeURIComponent(footerHref || "")).toContain("Hello Naïades,");
 });

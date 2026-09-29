@@ -47,7 +47,7 @@ for (const file of files) {
 test("legacy articles and blogs are migrated into the Articles collection", async () => {
   const articleDir = path.join(root, "src/content/articles");
   const entries = (await fs.readdir(articleDir)).filter((file) => file.endsWith(".mdoc"));
-  assert.equal(entries.length, 10);
+  assert.equal(entries.length, 9);
 
   const config = await fs.readFile(path.join(root, "keystatic.config.ts"), "utf8");
   assert.match(config, /label: "Articles"/);

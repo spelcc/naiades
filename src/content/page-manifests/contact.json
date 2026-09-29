@@ -25,10 +25,6 @@
       "t012": "p.paragraph.paragraph-light · : l'idée est d'échanger et se rencontrer, même si ton projet est flou, m",
       "t013": "strong · appels découverte en visio",
       "t014": "div.button-text-copy · Réserver un appel",
-      "t015": "div.h4 · Merci, je reviens vers toi au plus vite !",
-      "t016": "div · Oups ! Quelque chose s'est mal passé, réessaie ou contacte-moi via",
-      "t017": "div · .",
-      "t018": "a · Instagram",
       "t019": "h1 · Naïades Tattoo",
       "t020": "div.button-text · 22 rue du Cdt Faurax, 69006 Lyon",
       "t021": "div.button-text · @naiadestattoo",
@@ -53,8 +49,7 @@
       "img005": "nav-image-2_1 · 66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_",
       "img006": "nav-image-2_2 · 6729f49927c3fb14b5201c56_IMG_6280.jpeg",
       "img007": "nav-image-2_3 · 6729f49927c3fb14b5201c56_IMG_6280.jpeg",
-      "img008": "nav-image-2_4 · 66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_",
-      "img009": "contact-image · 66e689e358c7fdd631fb820f_B331B535-0241-4274-BE2A-3B33052BCF05_1_"
+      "img008": "nav-image-2_4 · 66e685a6ac6cecdbea32566b_EE1FDEBE-0774-48F9-A30F-A3A24AF9C3FF_1_"
     },
     "links": {
       "link001": "__KS_COPY_t001__ → /",
@@ -67,7 +62,6 @@
       "link008": "__KS_COPY_t008__ → tel:+33981868220",
       "link009": "social-link w-inline-block → https://www.instagram.com/naiadestattoo/",
       "link010": "__KS_COPY_t014__ → https://calendly.com/naiadestattoo/45min",
-      "link011": "__KS_COPY_t018__ → https://www.instagram.com/naiadestattoo/",
       "link012": "__KS_COPY_t020__ → https://maps.app.goo.gl/qSRW5Kk9gbhzwJPj7",
       "link013": "__KS_COPY_t021__ → https://www.instagram.com/naiadestattoo",
       "link014": "__KS_COPY_t022__ → mailto:naiadestattoo@gmail.com?subject=Demande%20de%20renseignement",
@@ -82,10 +76,6 @@
       "link023": "__KS_COPY_t031__ → #",
       "link024": "__KS_COPY_t032__ → https://rose-marble-portfolio.webflow.io/404"
     },
-    "form": {
-      "placeholder001": "input · Ton nom",
-      "placeholder002": "input · Ton adresse email",
-      "placeholder003": "textarea · Message"
-    }
+    "form": {}
   }
 }
