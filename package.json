@@ -16,7 +16,7 @@
     "test:e2e": "playwright test",
     "build:pages": "DEPLOY_TARGET=github-pages PUBLIC_CONTACT_ENDPOINT=https://naiades.irz.fr/api/contact astro build",
     "editor:build": "PUBLIC_KEYSTATIC_STORAGE=github PUBLIC_KEYSTATIC_GITHUB_REPO=spelcc/naiades PUBLIC_KEYSTATIC_GITHUB_APP_SLUG=spelcc-keystatic astro build --root editor",
-    "editor:deploy": "npm run editor:build && wrangler deploy --config editor/wrangler.jsonc"
+    "editor:deploy": "npm run editor:build && wrangler deploy --config editor/dist/server/wrangler.json"
   },
   "dependencies": {
     "@astrojs/markdoc": "^2.0.9",

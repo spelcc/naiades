@@ -10,4 +10,5 @@ export default defineConfig({
   adapter: cloudflare({ imageService: "passthrough" }),
   integrations: [react(), markdoc(), keystaticCloudflare()],
   devToolbar: { enabled: false },
+  security: { checkOrigin: false },
 });
