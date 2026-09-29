@@ -92,6 +92,7 @@ export async function renderArticleListPage(page = 1) {
   const skin = await renderArticleSkin({
     title: settings.title,
     contentHtml: '<p class="naiades-articles-intro">' + esc(settings.intro) + '</p>' + cardsHtml + paginationHtml,
+    showBreadcrumb: false,
   });
 
   return {

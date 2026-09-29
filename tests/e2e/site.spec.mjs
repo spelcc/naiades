@@ -39,6 +39,8 @@ test("Articles list uses the existing visual language", async ({ page }) => {
   await expect(page.locator("h1.uui-heading-large")).toHaveText("Articles");
   await expect(page.locator(".naiades-article-card")).toHaveCount(9);
   await expect(page.locator(".naiades-pagination")).toHaveCount(0);
+  await expect(page.locator(".uui-blogpost01_breadcrumb")).toHaveCount(0);
+  await expect(page.locator(".text-block", { hasText: "Articles" })).toHaveCount(0);
 
   const sportCard = page.locator(".naiades-article-card").filter({ hasText: "Je conseille toujours de ne pas faire de sport" }).first();
   await expect(sportCard).toHaveCSS("text-decoration-line", "none");
@@ -154,4 +156,15 @@ test("hamburger becomes a visible close icon while menu is open", async ({ page 
     await button.click();
     await expect(button).not.toHaveClass(/w--open/);
   }
+});
+
+
+test("Studio Pixel link uses body text styling", async ({ page }) => {
+  await page.goto("/apropos", { waitUntil: "domcontentloaded" });
+  const link = page.locator('a[href="https://lestudiopixel.com/"]').first();
+  await expect(link).toHaveText("Studio Pixel");
+  await expect(link.locator("strong")).toHaveCount(0);
+  await expect(link).toHaveCSS("color", "rgb(255, 255, 255)");
+  await expect(link).toHaveCSS("font-weight", "400");
+  await expect(link.locator("xpath=..")).toContainText("Studio Pixel, un studio de tatouage privé et inclusif.");
 });

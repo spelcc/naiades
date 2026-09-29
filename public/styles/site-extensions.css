@@ -170,3 +170,11 @@ a.naiades-article-card {
     flex-basis: 100%;
   }
 }
+
+
+/* Body content links */
+.paragraphabout a,
+.uui-text-rich-text a {
+  color: #fff !important;
+  font-weight: inherit;
+}
